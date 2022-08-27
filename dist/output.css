@@ -551,43 +551,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
+.absolute {
+  position: absolute;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
+.relative {
+  position: relative;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.m-0 {
+  margin: 0px;
 }
 
 .flex {
@@ -602,35 +575,106 @@ video {
   justify-content: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
 
-.hero {
-  margin-top: 6%;
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
-.hero-item {
-  width: 650px;
-  height: 650px;
-  box-shadow: rgb(0 0 0 / 11%) 32px 0px 35px 0;
+.text-center {
+  text-align: center;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:root {
+  --primary-color: rgb(255 186 55);
+  --box-shadow: rgb(0 0 0 / 11%) 32px 0px 35px 0;
+}
+
+.hero {
+  margin-top: -20%;
+}
+
+.hero-big {
+  width: 1700px;
+  height: 1700px;
+  box-shadow: var(--box-shadow);
+}
+
+.hero-small {
+  width: 730px;
+  height: 730px;
+  box-shadow: var(--box-shadow);
 }
 
 .big-logo {
-  width: 430px;
+  width: 444px;
+}
+
+.object-hero-top {
+  top: 4%;
+  left: 4%;
+  width: 18%;
+}
+
+.hero-title {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  padding: 20px;
+  bottom: 20px;
+  background-color: var(--primary-color);
+}
+
+.hero-section {
+  width: 100%;
 }
 
 @media (max-width: 767px) {
   .hero {
-    margin-top: 40%;
+    margin-top: -10px;
   }
 
-  .hero-item {
+  .hero-big {
+    width: 600px;
+    height: 600px;
+  }
+
+  .hero-small {
     width: 300px;
     height: 300px;
   }
 
   .big-logo {
     width: 200px;
+  }
+
+  .hero-title {
+    padding: 12px 20px;
+    bottom: -40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }

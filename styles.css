@@ -2,31 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero {
-    margin-top: 6%;
+:root {
+    --primary-color: rgb(255 186 55);
+    --box-shadow: rgb(0 0 0 / 11%) 32px 0px 35px 0;
 }
 
-.hero-item {
-    width: 650px;
-    height: 650px;
-    box-shadow: rgb(0 0 0 / 11%) 32px 0px 35px 0;
+.hero {
+    margin-top: -20%;
+}
+
+.hero-big {
+    width: 1700px;
+    height: 1700px;
+    box-shadow: var(--box-shadow);
+}
+
+.hero-small {
+    width: 730px;
+    height: 730px;
+    box-shadow: var(--box-shadow);
 }
 
 .big-logo {
-    width: 430px;
+    width: 444px;
+}
+
+.object-hero-top {
+    top: 4%;
+    left: 4%;
+    width: 18%;
+}
+
+.hero-title {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    padding: 20px;
+    bottom: 20px;
+    background-color: var(--primary-color);
+}
+
+.hero-section {
+    width: 100%;
 }
 
 @media (max-width: 767px) {
     .hero {
-        margin-top: 40%;
+        margin-top: -10px;
     }
 
-    .hero-item {
+    .hero-big {
+        width: 600px;
+        height: 600px;
+    }
+
+    .hero-small {
         width: 300px;
         height: 300px;
     }
 
     .big-logo {
         width: 200px;
+    }
+
+    .hero-title {
+        padding: 12px 20px;
+        bottom: -40px;
     }
 }
