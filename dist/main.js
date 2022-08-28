@@ -1,3 +1,10 @@
+window.addEventListener('load', function() {
+    const sidebar = document.querySelector('#sidebar')
+    if (sidebar && sidebar.classList.contains('hidden')) {
+        sidebar.classList.remove('hidden')
+    }
+})
+
 function addEventToMenuLink() {
     const sidebar = document.getElementById("sidebar");
     sidebar && sidebar.addEventListener("click", function (event) { handleNavMenu(event) });

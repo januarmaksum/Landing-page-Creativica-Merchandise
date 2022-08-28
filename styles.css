@@ -125,16 +125,6 @@ html {
     gap: 1rem;
 }
 
-.side-navlinks li a {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: 0.8;
-}
-
-.side-navlinks a:hover {
-    opacity: 1;
-}
-
 .sidebar-toggler {
     top: 60px;
     right: 41px;
