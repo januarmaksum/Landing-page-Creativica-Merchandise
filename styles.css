@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    scroll-behavior: smooth;
-}
-
 :root {
     --primary-color: rgb(255 186 55);
     --dark-light-color: #a6a6a6;
