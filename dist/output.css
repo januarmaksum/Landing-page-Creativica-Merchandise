@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -551,6 +551,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -591,24 +625,37 @@ video {
   margin: 0px;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
 
-.-mb-14 {
-  margin-bottom: -3.5rem;
+.-mb-20 {
+  margin-bottom: -5rem;
 }
 
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
+.-mb-10 {
+  margin-bottom: -2.5rem;
 }
 
-.-mb-20 {
-  margin-bottom: -5rem;
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
 }
 
 .block {
@@ -677,9 +724,22 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 186 55 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -692,6 +752,10 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .py-3 {
@@ -744,18 +808,6 @@ video {
   padding-bottom: 9rem;
 }
 
-.pt-60 {
-  padding-top: 15rem;
-}
-
-.pt-40 {
-  padding-top: 10rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -793,6 +845,11 @@ video {
   line-height: 1;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -826,6 +883,12 @@ video {
 .no-underline {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 html {
