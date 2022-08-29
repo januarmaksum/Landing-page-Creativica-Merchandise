@@ -9,6 +9,7 @@ html {
 :root {
     --primary-color: rgb(255 186 55);
     --dark-light-color: #a6a6a6;
+    --dark-gray-color: #6d6d6d;
     --box-shadow: rgb(0 0 0 / 11%) 32px 0px 35px 0;
 }
 
@@ -176,12 +177,17 @@ html {
 }
 
 .object-about-1 {
-    background-image: url('images/our-client.jpg');
+    background-image: url('images/our-client-1.jpg');
     width: 17rem;
     height: 17rem;
     right: -9rem;
     top: -2rem;
     z-index: -1;
+}
+
+.card-info {
+    border: 5px solid var(--primary-color);
+    color: var(--dark-gray-color);
 }
 
 @media (max-width: 320px) {
