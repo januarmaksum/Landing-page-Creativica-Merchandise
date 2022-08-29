@@ -175,6 +175,15 @@ html {
     border-top-right-radius: 10px;
 }
 
+.object-about-1 {
+    background-image: url('images/our-client.jpg');
+    width: 17rem;
+    height: 17rem;
+    right: -9rem;
+    top: -2rem;
+    z-index: -1;
+}
+
 @media (max-width: 320px) {
     .menu-title {
         font-size: 19px;

@@ -563,68 +563,20 @@ video {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.-left-8 {
-  left: -2rem;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.-left-3 {
-  left: -0.75rem;
-}
-
-.-left-1 {
-  left: -0.25rem;
-}
-
-.left-3 {
-  left: 0.75rem;
-}
-
-.left-7 {
-  left: 1.75rem;
-}
-
-.left-12 {
-  left: 3rem;
-}
-
-.left-16 {
-  left: 4rem;
-}
-
-.left-14 {
-  left: 3.5rem;
-}
-
-.-bottom-5 {
-  bottom: -1.25rem;
-}
-
-.-bottom-16 {
-  bottom: -4rem;
-}
-
-.-bottom-10 {
-  bottom: -2.5rem;
+.-bottom-28 {
+  bottom: -7rem;
 }
 
 .left-20 {
   left: 5rem;
 }
 
-.-bottom-20 {
-  bottom: -5rem;
+.left-0 {
+  left: 0px;
 }
 
-.-bottom-28 {
-  bottom: -7rem;
+.bottom-0 {
+  bottom: 0px;
 }
 
 .z-50 {
@@ -643,12 +595,20 @@ video {
   margin-left: 0.5rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
+.-mb-14 {
+  margin-bottom: -3.5rem;
 }
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.-mb-20 {
+  margin-bottom: -5rem;
 }
 
 .block {
@@ -667,16 +627,8 @@ video {
   display: none;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
 .h-24 {
   height: 6rem;
-}
-
-.h-2 {
-  height: 0.5rem;
 }
 
 .w-20 {
@@ -699,10 +651,6 @@ video {
 
 .w-64 {
   width: 16rem;
-}
-
-.w-72 {
-  width: 18rem;
 }
 
 .grid-cols-1 {
@@ -771,11 +719,6 @@ video {
   padding-right: 2rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .px-14 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -797,12 +740,20 @@ video {
   padding-top: 4rem;
 }
 
-.pb-40 {
-  padding-bottom: 10rem;
-}
-
 .pb-36 {
   padding-bottom: 9rem;
+}
+
+.pt-60 {
+  padding-top: 15rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .text-center {
@@ -837,14 +788,13 @@ video {
   line-height: 1.5rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-bold {
@@ -853,10 +803,6 @@ video {
 
 .font-medium {
   font-weight: 500;
-}
-
-.font-light {
-  font-weight: 300;
 }
 
 .uppercase {
@@ -1049,6 +995,15 @@ html {
   background-color: var(--primary-color);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.object-about-1 {
+  background-image: url('images/our-client.jpg');
+  width: 17rem;
+  height: 17rem;
+  right: -9rem;
+  top: -2rem;
+  z-index: -1;
 }
 
 @media (max-width: 320px) {
@@ -1346,18 +1301,6 @@ html {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:-bottom-20 {
-    bottom: -5rem;
-  }
-
-  .\32xl\:-bottom-12 {
-    bottom: -3rem;
-  }
-
-  .\32xl\:-bottom-10 {
-    bottom: -2.5rem;
-  }
-
   .\32xl\:-bottom-8 {
     bottom: -2rem;
   }
