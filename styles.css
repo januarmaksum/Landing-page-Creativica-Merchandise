@@ -205,6 +205,10 @@ html {
     background-color: rgba(255, 186, 55, 92%);
 }
 
+.footer-divider {
+    background-color: rgba(255, 255, 255, 75%);
+}
+
 @media (max-width: 320px) {
     .menu-title {
         font-size: 19px;
