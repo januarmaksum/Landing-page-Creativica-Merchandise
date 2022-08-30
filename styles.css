@@ -205,6 +205,10 @@
     background-color: rgba(255, 255, 255, 75%);
 }
 
+.form {
+    background-image: url('images/object-form-1.png');
+}
+
 @media (max-width: 320px) {
     .menu-title {
         font-size: 19px;

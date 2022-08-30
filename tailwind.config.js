@@ -5,13 +5,16 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif']
+      },
+      colors: {
+        'white': '#ffffff',
+        'black': '#000000',
+        'orange': '#ffba37',
+        'dark-orange': '#d7a63e',
+        'orange-light': '#ffcd6a',
+        'orange-dark': '#ecb240',
       }
     },
-    colors: {
-      'white': '#ffffff',
-      'black': '#000000',
-      'orange': '#ffba37',
-      'dark-orange': '#d7a63e',
-    },
+    
   },
 }
