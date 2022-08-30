@@ -775,6 +775,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex-nowrap {
   flex-wrap: nowrap;
 }
@@ -966,6 +970,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .text-center {
@@ -1358,6 +1366,19 @@ body {
     z-index: -1;
   }
 
+  .object-about-1 {
+    width: 41rem;
+    height: 41rem;
+    right: -15rem;
+    top: -15rem;
+    z-index: -1;
+  }
+
+  .hero-about-us {
+    padding-top: 29rem;
+    margin-top: -30rem;
+  }
+
   .hero-small {
     width: 35rem;
     height: 35rem;
@@ -1481,6 +1502,30 @@ body {
     margin-bottom: 2.25rem;
   }
 
+  .md\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:inline-block {
+    display: inline-block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -1493,12 +1538,50 @@ body {
     width: 75%;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-20 {
+    width: 5rem;
+  }
+
+  .md\:w-52 {
+    width: 13rem;
+  }
+
+  .md\:w-max {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .md\:max-w-sm {
+    max-width: 24rem;
+  }
+
   .md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .md\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .md\:overflow-visible {
+    overflow: visible;
+  }
+
+  .md\:p-2 {
+    padding: 0.5rem;
   }
 
   .md\:py-4 {
@@ -1521,6 +1604,11 @@ body {
     padding-right: 3.5rem;
   }
 
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .md\:pb-44 {
     padding-bottom: 11rem;
   }
@@ -1529,12 +1617,24 @@ body {
     padding-left: 5rem;
   }
 
-  .md\:pb-24 {
-    padding-bottom: 6rem;
+  .md\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .md\:pb-60 {
     padding-bottom: 15rem;
+  }
+
+  .md\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
+  .md\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:pl-10 {
+    padding-left: 2.5rem;
   }
 
   .md\:text-justify {
@@ -1565,11 +1665,33 @@ body {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:mb-40 {
+    margin-bottom: 10rem;
+  }
+
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
+  .lg\:pl-20 {
+    padding-left: 5rem;
   }
 }
 

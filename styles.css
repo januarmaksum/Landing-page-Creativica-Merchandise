@@ -292,6 +292,19 @@ body {
         z-index: -1;
     }
 
+    .object-about-1 {
+        width: 41rem;
+        height: 41rem;
+        right: -15rem;
+        top: -15rem;
+        z-index: -1;
+    }
+
+    .hero-about-us {
+        padding-top: 29rem;
+        margin-top: -30rem;
+    }
+
     .hero-small {
         width: 35rem;
         height: 35rem;
