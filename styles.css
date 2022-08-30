@@ -9,6 +9,14 @@
     --box-shadow: rgb(0 0 0 / 11%) 32px 0px 35px 0;
 }
 
+html {
+    @apply scroll-smooth;
+}
+
+body {
+    @apply font-roboto;
+}
+
 .hero-big {
     box-shadow: var(--box-shadow);
 }

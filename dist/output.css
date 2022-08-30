@@ -972,20 +972,12 @@ video {
   padding-top: 1rem;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
 .text-center {
   text-align: center;
 }
 
 .text-right {
   text-align: right;
-}
-
-.font-roboto {
-  font-family: Roboto, sans-serif;
 }
 
 .text-2xl {
@@ -1047,10 +1039,6 @@ video {
   letter-spacing: 0.1em;
 }
 
-.tracking-wide {
-  letter-spacing: 0.025em;
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1093,6 +1081,14 @@ video {
   --dark-light-color: #a6a6a6;
   --dark-gray-color: #6d6d6d;
   --box-shadow: rgb(0 0 0 / 11%) 32px 0px 35px 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto, sans-serif;
 }
 
 .hero-big {
