@@ -1605,24 +1605,16 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .lg\:absolute {
-    position: absolute;
-  }
-
   .lg\:relative {
     position: relative;
   }
 
-  .lg\:-left-11 {
-    left: -2.75rem;
+  .lg\:top-0 {
+    top: 0px;
   }
 
   .lg\:-left-24 {
     left: -6rem;
-  }
-
-  .lg\:top-0 {
-    top: 0px;
   }
 
   .lg\:bottom-0 {
@@ -1633,10 +1625,6 @@ body {
     margin-bottom: 10rem;
   }
 
-  .lg\:flex {
-    display: flex;
-  }
-
   .lg\:grid {
     display: grid;
   }
@@ -1645,16 +1633,12 @@ body {
     display: none;
   }
 
-  .lg\:h-4\/5 {
-    height: 80%;
-  }
-
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:flex-col {
-    flex-direction: column;
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:items-center {
@@ -1665,9 +1649,12 @@ body {
     gap: 2.25rem;
   }
 
-  .lg\:py-96 {
-    padding-top: 24rem;
-    padding-bottom: 24rem;
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .lg\:bg-left {
+    background-position: left;
   }
 
   .lg\:pl-20 {
@@ -1677,15 +1664,15 @@ body {
   .lg\:pb-24 {
     padding-bottom: 6rem;
   }
+
+  .lg\:text-right {
+    text-align: right;
+  }
 }
 
 @media (min-width: 1280px) {
   .xl\:block {
     display: block;
-  }
-
-  .xl\:grid {
-    display: grid;
   }
 
   .xl\:hidden {
@@ -1700,10 +1687,6 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .xl\:gap-9 {
-    gap: 2.25rem;
-  }
-
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1713,10 +1696,6 @@ body {
 @media (min-width: 1536px) {
   .\32xl\:-bottom-8 {
     bottom: -2rem;
-  }
-
-  .\32xl\:hidden {
-    display: none;
   }
 
   .\32xl\:w-10\/12 {
