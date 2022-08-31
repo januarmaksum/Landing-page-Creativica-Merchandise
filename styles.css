@@ -362,6 +362,27 @@ body {
         width: 55rem;
         height: 55rem;
     }
+
+    .object-about-1 {
+        top: -11rem;
+        width: 45rem;
+        height: 45rem;
+    }
+
+    .form-section {
+        background-position: left -29rem center;
+    }
+
+    .form-section::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: #e6e6e5;
+        width: 30rem;
+        z-index: 1;
+    }
 }
 
 @media (min-width: 1536px) {

@@ -1424,6 +1424,27 @@ body {
     width: 55rem;
     height: 55rem;
   }
+
+  .object-about-1 {
+    top: -11rem;
+    width: 45rem;
+    height: 45rem;
+  }
+
+  .form-section {
+    background-position: left -29rem center;
+  }
+
+  .form-section::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #e6e6e5;
+    width: 30rem;
+    z-index: 1;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -1609,16 +1630,28 @@ body {
     position: relative;
   }
 
+  .lg\:-left-8 {
+    left: -2rem;
+  }
+
   .lg\:top-0 {
     top: 0px;
   }
 
-  .lg\:-left-24 {
-    left: -6rem;
+  .lg\:-left-36 {
+    left: -9rem;
   }
 
-  .lg\:bottom-0 {
-    bottom: 0px;
+  .lg\:-top-14 {
+    top: -3.5rem;
+  }
+
+  .lg\:-top-24 {
+    top: -6rem;
+  }
+
+  .lg\:z-10 {
+    z-index: 10;
   }
 
   .lg\:mb-40 {
@@ -1653,8 +1686,9 @@ body {
     gap: 2.5rem;
   }
 
-  .lg\:bg-left {
-    background-position: left;
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .lg\:pl-20 {
@@ -1665,14 +1699,44 @@ body {
     padding-bottom: 6rem;
   }
 
+  .lg\:pt-20 {
+    padding-top: 5rem;
+  }
+
   .lg\:text-right {
     text-align: right;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
 @media (min-width: 1280px) {
+  .xl\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .xl\:mb-32 {
+    margin-bottom: 8rem;
+  }
+
+  .xl\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .xl\:block {
     display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
   }
 
   .xl\:hidden {
@@ -1683,19 +1747,147 @@ body {
     width: 100%;
   }
 
+  .xl\:w-auto {
+    width: auto;
+  }
+
+  .xl\:w-max {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .xl\:w-fit {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .xl\:w-3\/4 {
+    width: 75%;
+  }
+
+  .xl\:basis-1\/5 {
+    flex-basis: 20%;
+  }
+
+  .xl\:basis-1\/6 {
+    flex-basis: 16.666667%;
+  }
+
+  .xl\:basis-\[65\%\] {
+    flex-basis: 65%;
+  }
+
+  .xl\:basis-\[35\%\] {
+    flex-basis: 35%;
+  }
+
+  .xl\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
   .xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .xl\:flex-col {
+    flex-direction: column;
+  }
+
+  .xl\:gap-24 {
+    gap: 6rem;
+  }
+
+  .xl\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .xl\:rounded-\[5rem\] {
+    border-radius: 5rem;
+  }
+
+  .xl\:rounded-\[6rem\] {
+    border-radius: 6rem;
+  }
+
+  .xl\:p-20 {
+    padding: 5rem;
+  }
+
+  .xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .xl\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .xl\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .xl\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  .xl\:py-56 {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+  }
+
+  .xl\:py-44 {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+  }
+
+  .xl\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .xl\:pt-56 {
+    padding-top: 14rem;
+  }
+
+  .xl\:pt-44 {
+    padding-top: 11rem;
+  }
+
+  .xl\:text-center {
+    text-align: center;
   }
 
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 1536px) {
   .\32xl\:-bottom-8 {
     bottom: -2rem;
+  }
+
+  .\32xl\:hidden {
+    display: none;
   }
 
   .\32xl\:w-10\/12 {
