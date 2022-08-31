@@ -1432,7 +1432,7 @@ body {
   }
 
   .form-section {
-    background-position: left -29rem center;
+    background-position: left -35rem center;
   }
 
   .form-section::after {
@@ -1442,8 +1442,12 @@ body {
     bottom: 0;
     top: 0;
     background-color: #e6e6e5;
-    width: 30rem;
+    width: 32rem;
     z-index: 1;
+  }
+
+  .footer-divider {
+    background-color: rgb(255 255 255 / 45%);
   }
 }
 
@@ -1723,14 +1727,6 @@ body {
     margin-bottom: 4rem;
   }
 
-  .xl\:mb-32 {
-    margin-bottom: 8rem;
-  }
-
-  .xl\:mb-20 {
-    margin-bottom: 5rem;
-  }
-
   .xl\:block {
     display: block;
   }
@@ -1739,40 +1735,24 @@ body {
     display: flex;
   }
 
-  .xl\:hidden {
-    display: none;
+  .xl\:h-60 {
+    height: 15rem;
+  }
+
+  .xl\:h-28 {
+    height: 7rem;
   }
 
   .xl\:w-full {
     width: 100%;
   }
 
-  .xl\:w-auto {
-    width: auto;
-  }
-
-  .xl\:w-max {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-
-  .xl\:w-fit {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
   .xl\:w-3\/4 {
     width: 75%;
   }
 
-  .xl\:basis-1\/5 {
-    flex-basis: 20%;
-  }
-
-  .xl\:basis-1\/6 {
-    flex-basis: 16.666667%;
+  .xl\:max-w-none {
+    max-width: none;
   }
 
   .xl\:basis-\[65\%\] {
@@ -1783,20 +1763,12 @@ body {
     flex-basis: 35%;
   }
 
-  .xl\:grid-flow-col {
-    grid-auto-flow: column;
-  }
-
   .xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:flex-row {
     flex-direction: row;
-  }
-
-  .xl\:flex-col {
-    flex-direction: column;
   }
 
   .xl\:gap-24 {
@@ -1807,16 +1779,12 @@ body {
     gap: 2.5rem;
   }
 
-  .xl\:rounded-\[5rem\] {
-    border-radius: 5rem;
+  .xl\:overflow-hidden {
+    overflow: hidden;
   }
 
   .xl\:rounded-\[6rem\] {
     border-radius: 6rem;
-  }
-
-  .xl\:p-20 {
-    padding: 5rem;
   }
 
   .xl\:px-20 {
@@ -1824,9 +1792,9 @@ body {
     padding-right: 5rem;
   }
 
-  .xl\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+  .xl\:py-44 {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
   }
 
   .xl\:py-16 {
@@ -1834,31 +1802,12 @@ body {
     padding-bottom: 4rem;
   }
 
-  .xl\:px-36 {
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
-
-  .xl\:py-56 {
-    padding-top: 14rem;
-    padding-bottom: 14rem;
-  }
-
-  .xl\:py-44 {
+  .xl\:pt-44 {
     padding-top: 11rem;
-    padding-bottom: 11rem;
   }
 
   .xl\:pt-16 {
     padding-top: 4rem;
-  }
-
-  .xl\:pt-56 {
-    padding-top: 14rem;
-  }
-
-  .xl\:pt-44 {
-    padding-top: 11rem;
   }
 
   .xl\:text-center {
