@@ -424,4 +424,8 @@ body {
     .hero {
         margin-top: -19rem;
     }
+
+    .footer-divider {
+        background-color: rgb(255 255 255 / 80%);
+    }
 }

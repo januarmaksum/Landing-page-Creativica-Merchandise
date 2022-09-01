@@ -1486,6 +1486,10 @@ body {
   .hero {
     margin-top: -19rem;
   }
+
+  .footer-divider {
+    background-color: rgb(255 255 255 / 80%);
+  }
 }
 
 .placeholder\:text-white::-moz-placeholder {
@@ -1824,6 +1828,11 @@ body {
     line-height: 1;
   }
 
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1835,6 +1844,15 @@ body {
     bottom: -2rem;
   }
 
+  .\32xl\:-top-28 {
+    top: -7rem;
+  }
+
+  .\32xl\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   .\32xl\:hidden {
     display: none;
   }
@@ -1843,7 +1861,29 @@ body {
     width: 83.333333%;
   }
 
+  .\32xl\:max-w-none {
+    max-width: none;
+  }
+
+  .\32xl\:gap-16 {
+    gap: 4rem;
+  }
+
+  .\32xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .\32xl\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
   .\32xl\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .\32xl\:pt-0 {
+    padding-top: 0px;
   }
 }
