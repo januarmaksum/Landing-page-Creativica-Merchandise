@@ -1861,8 +1861,44 @@ body {
     width: 83.333333%;
   }
 
+  .\32xl\:w-2 {
+    width: 0.5rem;
+  }
+
+  .\32xl\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .\32xl\:max-w-none {
     max-width: none;
+  }
+
+  .\32xl\:basis-\[\] {
+    flex-basis: ;
+  }
+
+  .\32xl\:basis-\[40\%\] {
+    flex-basis: 40%;
+  }
+
+  .\32xl\:basis-\[70\%\] {
+    flex-basis: 70%;
+  }
+
+  .\32xl\:basis-\[80\%\] {
+    flex-basis: 80%;
+  }
+
+  .\32xl\:basis-\[20\%\] {
+    flex-basis: 20%;
+  }
+
+  .\32xl\:basis-\[15\%\] {
+    flex-basis: 15%;
+  }
+
+  .\32xl\:basis-\[85\%\] {
+    flex-basis: 85%;
   }
 
   .\32xl\:gap-16 {
@@ -1885,5 +1921,44 @@ body {
 
   .\32xl\:pt-0 {
     padding-top: 0px;
+  }
+
+  .\32xl\:pl-44 {
+    padding-left: 11rem;
+  }
+
+  .\32xl\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .\32xl\:pl-48 {
+    padding-left: 12rem;
+  }
+
+  .\32xl\:pr-32 {
+    padding-right: 8rem;
+  }
+
+  .\32xl\:pr-2 {
+    padding-right: 0.5rem;
+  }
+
+  .\32xl\:pr-24 {
+    padding-right: 6rem;
+  }
+
+  .\32xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .\32xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
