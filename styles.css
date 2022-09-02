@@ -428,4 +428,8 @@ body {
     .footer-divider {
         background-color: rgb(255 255 255 / 80%);
     }
+
+    .hero-about-us {
+        padding-top: 52rem;
+    }
 }
