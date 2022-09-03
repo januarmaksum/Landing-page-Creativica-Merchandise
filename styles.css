@@ -380,7 +380,7 @@ body {
         bottom: 0;
         top: 0;
         background-color: #e6e6e5;
-        width: 32rem;
+        width: 36rem;
         z-index: 1;
     }
 
@@ -431,5 +431,13 @@ body {
 
     .hero-about-us {
         padding-top: 52rem;
+    }
+
+    .form-section {
+        background-position: left -48rem center;
+    }
+    
+    .form-section::after {
+        width: 50rem;
     }
 }
