@@ -1,8 +1,25 @@
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     const sidebar = document.querySelector('#sidebar')
     if (sidebar && sidebar.classList.contains('hidden')) {
         sidebar.classList.remove('hidden')
     }
+
+    var observer = new IntersectionObserver(observerCallback);
+    function observerCallback(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__animated', 'animate__fadeInDown')
+                return
+            }
+        });
+    };
+
+    const initElementAnimate = document.querySelectorAll('.init_animate');
+    initElementAnimate.forEach((el) => observer.observe(el))
+
+    const copyright = document.getElementById('copyright')
+    const textCopyright = `Copyright &copy; ${new Date().getFullYear()} Creativica`;
+    if (copyright) copyright.innerHTML = textCopyright;
 })
 
 function addEventToMenuLink() {
