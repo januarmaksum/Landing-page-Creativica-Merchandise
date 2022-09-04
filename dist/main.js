@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
     };
 
     const initElementAnimate = document.querySelectorAll('.init_animate');
-    initElementAnimate.forEach((el) => observer.observe(el))
+    initElementAnimate && initElementAnimate.forEach((el) => observer.observe(el))
 
     const copyright = document.getElementById('copyright')
     const textCopyright = `Copyright &copy; ${new Date().getFullYear()} Creativica`;

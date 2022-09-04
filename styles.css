@@ -508,15 +508,21 @@ body {
     }
 
     .object-intro-1 {
-        top: -27rem;
+        top: -20rem;
         width: 55rem;
         height: 55rem;
     }
 
+    .hero-about-us {
+        padding-top: 50rem;
+        margin-top: -30rem;
+    }
+
     .object-about-1 {
-        top: -11rem;
-        width: 45rem;
-        height: 45rem;
+        top: -10rem;
+        width: 35rem;
+        height: 35rem;
+        left: 12rem;
     }
 
     .form-section {
