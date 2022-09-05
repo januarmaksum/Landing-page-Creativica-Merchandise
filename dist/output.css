@@ -2247,10 +2247,6 @@ body {
     width: 66.666667%;
   }
 
-  .\32xl\:max-w-none {
-    max-width: none;
-  }
-
   .\32xl\:basis-\[85\%\] {
     flex-basis: 85%;
   }
