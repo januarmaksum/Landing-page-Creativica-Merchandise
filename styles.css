@@ -255,8 +255,6 @@ body {
 }
 
 .sidebar-toggler {
-    top: 60px;
-    right: 41px;
     width: 43px;
     height: 26px;
     display: flex;
@@ -273,6 +271,10 @@ body {
     height: 4px;
     transition: all 0.3s ease;
     pointer-events: none;
+}
+
+.sidebar-toggler-2 span {
+    background-color: white;
 }
 
 .sidebar-toggler.opened span {
@@ -405,11 +407,6 @@ body {
     .menu-title {
         top: 48px;
         right: 70px;
-    }
-
-    .sidebar-toggler {
-        top: 54px;
-        right: 20px;
     }
 
     .object-circle-bottom {

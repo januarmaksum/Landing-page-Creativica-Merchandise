@@ -1,0 +1,105 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#d28b12">
+    <title>Creativica Media Global - Our Products</title>
+    <meta name="description" content="Made Creatively with Creativica - Merchandising Service">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/dist/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/dist/images/favicon.ico" type="image/x-icon">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="dist/main.js" defer></script>
+</head>
+<body>
+    <!-- START: HEADER -->
+    <div class="flex justify-between bg-orange relative pt-5 pb-5">
+        <div class="flex justify-center items-center w-16 pl-4">
+            <img src="dist/images/logo-white.png" alt="logo creativica media global">
+        </div>
+        <div class="w-40 mx-auto absolute left-0 right-0 top-[50%] translate-y-[-50%]">
+            <img src="dist/images/logo-text.png" alt="logo creativica media global">
+        </div>
+        <div class="flex justify-center items-center pr-4">
+            <!-- START: MENU SIDEBAR -->
+            <div class="hidden menu-title absolute text-2xl md:text-3xl font-light">Made <span class="font-bold">Creatively</span></div>
+            <div onclick="handleMenuSidebar()" class="top-[52px] md:top-[60px] right-[20px] md:right-[41px] sidebar-toggler sidebar-toggler-2 md:fixed">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <aside id="sidebar" class="hidden">
+                <div class="sidebar-content pt-24">
+                    <nav class="text-right">
+                        <ul class="grid gap-4">
+                            <li>
+                                <a class="link font-bold hover:text-white text-xl md:text-3xl xl:text-2xl 2xl:text-3xl  uppercase" href="/index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="link font-bold hover:text-white text-xl md:text-3xl xl:text-2xl 2xl:text-3xl  uppercase" href="#about">About us</a>
+                            </li>
+                            <li>
+                                <a class="link font-bold hover:text-white text-xl md:text-3xl xl:text-2xl 2xl:text-3xl uppercase" href="#our-team">Meet our team</a>
+                            </li>
+                            <li>
+                                <a class="link font-bold hover:text-white text-xl md:text-3xl xl:text-2xl 2xl:text-3xl uppercase" href="/products.html">our products</a>
+                            </li>
+                            <li>
+                                <a class="link font-bold hover:text-white text-xl md:text-3xl xl:text-2xl 2xl:text-3xl uppercase" href="#form">direct quotation</a>
+                            </li>
+                            <li>
+                                <a class="link font-bold hover:text-white text-xl md:text-3xl xl:text-2xl 2xl:text-3xl uppercase" href="#contact">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sidebar-footer absolute">
+                    <a class="icon flex items-center no-underline" href="https://www.instagram.com/creativica.id/" target="_blank">
+                        <img class="w-8" src="dist/images/icons8-instagram.svg" alt="https://icons8.com/icon/32292/instagram" />
+                        <div class="icon-title ml-2 font-medium text-xl">Creativica.id</div>
+                    </a>
+                </div>
+            </aside>
+            <!-- END: MENU SIDEBAR -->
+        </div>
+    </div>
+    <!-- END: HEADER -->
+
+    <aside class="grid grid-cols-1 md:grid-cols-[30rem,1fr]">
+        <div class="flex flex-col p-4">
+            <div class="relative">
+                <img class="absolute left-2 top-[50%] translate-y-[-50%] w-4" src="dist/images/4781817_brows_browsing_find_search_seo_icon.svg" alt="icon search">
+                <input class="border-4 w-full h-10 pl-8 focus:outline-none focus:border-gray-300" type="text" placeholder="Search..">
+            </div>
+            <div class="flex justify-between my-4">
+                <div class="w-11/12 truncate text-gray-dark-100">
+                    <a href="/index.html">Home</a> / <a href="/products.html">Our Products</a> / <a href="/detail.html">Tableware</a>
+                </div>
+                <div class="w-2/12 flex justify-end">
+                    <div>
+                        <div class="hidden">
+                            105 products
+                        </div>
+                        <div class="flex">
+                            <div class="hidden">|</div>
+                            <div>
+                                <div class="hidden">Sort by</div> 
+                                <img class="w-6" src="dist/images/9068534_sort_three_icon.svg" alt="icon sort product">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="order-2">
+            sidebar
+        </div>
+        <div class="order-1">
+            list product
+        </div> -->
+    </aside>
+</body>
+</html>

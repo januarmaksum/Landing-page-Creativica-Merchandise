@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
@@ -13,6 +13,7 @@ module.exports = {
         'dark-orange': '#d7a63e',
         'orange-light': '#ffcd6a',
         'orange-dark': '#ecb240',
+        'gray-dark-100': '#808080',
       }
     },
     
