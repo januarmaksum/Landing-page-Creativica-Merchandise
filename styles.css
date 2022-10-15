@@ -165,6 +165,7 @@ html {
 
 body {
     @apply font-roboto;
+    @apply text-gray-dark-300;
 }
 
 .hero-big {
@@ -190,6 +191,10 @@ body {
     top: 50px;
     right: 100px;
     z-index: 999;
+}
+
+.menu-fixed .menu-title {
+    display: none;
 }
 
 .menu-title.active {
@@ -262,7 +267,11 @@ body {
     cursor: pointer;
     overflow: hidden;
     gap: 5px;
-    z-index: 9999;
+    z-index: 9991;
+}
+
+.menu-fixed .sidebar-toggler {
+    position: initial;
 }
 
 .sidebar-toggler span {
@@ -273,7 +282,7 @@ body {
     pointer-events: none;
 }
 
-.sidebar-toggler-2 span {
+.menu-fixed .sidebar-toggler span {
     background-color: white;
 }
 
@@ -283,6 +292,12 @@ body {
 
 .sidebar-toggler.opened {
     position: fixed;
+}
+
+.menu-fixed .sidebar-toggler.opened {
+    position: fixed;
+    top: 31px;
+    right: 16px;
 }
 
 .sidebar-footer {
@@ -367,6 +382,48 @@ body {
 
 .form {
     background-image: url('images/object-form-1.png');
+}
+
+.modal-lists {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.2s ease;
+}
+
+.modal-lists.open {
+    pointer-events: all;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-lists-wrapper {
+    min-height: calc(100% - 3rem);
+}
+
+.modal-lists-content {
+    position: relative;
+    background-color: white;
+    box-shadow: 0 3px 15px -5px rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    max-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.4s ease;
+}
+
+.modal-lists.open .modal-lists-content {
+    transform: scale(1);
 }
 
 @media (max-width: 320px) {

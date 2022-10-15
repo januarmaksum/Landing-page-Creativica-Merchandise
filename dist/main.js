@@ -76,3 +76,23 @@ function appendElementOutsideSidebar() {
     outerSidebar.addEventListener('click', function () { handleMenuSidebar() });
     document.body.appendChild(outerSidebar);
 }
+
+function handleModalListCategory() {
+    if (screen.width > 767) return
+
+    const listModal = document.querySelector('.modal-lists');
+    
+    const showModal = () => {
+        listModal && listModal.classList.add('open');
+    }
+    
+    const closeModal = (e) => {
+        if (e.target.classList.contains('modal-lists', 'open')) {
+            listModal && listModal.classList.remove('open');
+            window.removeEventListener('click', e => closeModal(e));
+        }
+    }
+
+    showModal()
+    window.addEventListener('click', e => closeModal(e));
+}

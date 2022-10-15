@@ -14,19 +14,19 @@
     <link href="/dist/output.css" rel="stylesheet">
     <script src="dist/main.js" defer></script>
 </head>
-<body>
+<body class="menu-fixed">
     <!-- START: HEADER -->
     <div class="flex justify-between bg-orange relative pt-5 pb-5">
-        <div class="flex justify-center items-center w-16 pl-4">
+        <a href="/index.html" class="flex justify-center items-center w-12 ml-4">
             <img src="dist/images/logo-white.png" alt="logo creativica media global">
-        </div>
-        <div class="w-40 mx-auto absolute left-0 right-0 top-[50%] translate-y-[-50%]">
+        </a>
+        <a href="/index.html" class="block w-40 mx-auto absolute left-0 right-0 top-[50%] translate-y-[-50%]">
             <img src="dist/images/logo-text.png" alt="logo creativica media global">
-        </div>
+        </a>
         <div class="flex justify-center items-center pr-4">
             <!-- START: MENU SIDEBAR -->
-            <div class="hidden menu-title absolute text-2xl md:text-3xl font-light">Made <span class="font-bold">Creatively</span></div>
-            <div onclick="handleMenuSidebar()" class="top-[52px] md:top-[60px] right-[20px] md:right-[41px] sidebar-toggler sidebar-toggler-2 md:fixed">
+            <div class="menu-title absolute text-2xl md:text-3xl font-light">Made <span class="font-bold">Creatively</span></div>
+            <div onclick="handleMenuSidebar()" class="top-[52px] md:top-[60px] right-[20px] md:right-[41px] sidebar-toggler fixed">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -68,17 +68,21 @@
     </div>
     <!-- END: HEADER -->
 
-    <aside class="grid grid-cols-1 md:grid-cols-[30rem,1fr]">
+    <!-- START: BREADCRUMB / SEARCH -->
+    <div class="grid grid-cols-1 md:grid-cols-[30rem,1fr]">
         <div class="flex flex-col p-4">
             <div class="relative">
                 <img class="absolute left-2 top-[50%] translate-y-[-50%] w-4" src="dist/images/4781817_brows_browsing_find_search_seo_icon.svg" alt="icon search">
-                <input class="border-4 w-full h-10 pl-8 focus:outline-none focus:border-gray-300" type="text" placeholder="Search..">
+                <input class="border-4 w-full h-10 pl-8 focus:outline-none focus:border-gray-300" type="text" placeholder="Search product..">
             </div>
-            <div class="flex justify-between my-4">
-                <div class="w-11/12 truncate text-gray-dark-100">
+            <div class="flex justify-between items-center my-4">
+                <div class="w-10/12 truncate text-gray-dark-100 text-sm">
                     <a href="/index.html">Home</a> / <a href="/products.html">Our Products</a> / <a href="/detail.html">Tableware</a>
                 </div>
-                <div class="w-2/12 flex justify-end">
+                <div class="w-3/12 flex justify-end gap-3">
+                    <div onclick="handleModalListCategory()" class="md:hidden">
+                        <img class="w-6" src="dist/images/352389_bulleted_format_list_icon.svg" alt="list category">
+                    </div>
                     <div>
                         <div class="hidden">
                             105 products
@@ -87,19 +91,208 @@
                             <div class="hidden">|</div>
                             <div>
                                 <div class="hidden">Sort by</div> 
-                                <img class="w-6" src="dist/images/9068534_sort_three_icon.svg" alt="icon sort product">
+                                <img class="w-6" src="dist/images/8674352_ic_fluent_arrow_sort_regular_icon.svg" alt="icon sort product">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="order-2">
-            sidebar
+    </div>
+    <!-- END: BREADCRUMB / SEARCH -->
+
+    <section class="grid grid-cols-1 md:grid-cols-[30rem,1fr] px-4 mb-11">
+        <!-- START: SIDEBAR -->
+        <aside>
+            <h2 class="flex items-center text-xl font-bold tracking-wider">
+                Our Products
+            </h2>
+            <div class="modal-lists">
+                <div class="modal-lists-wrapper m-12 flex justify-center items-center">
+                    <div class="modal-lists-content">
+                        <h3 class="ml-3 mt-2 font-bold text-lg tracking-wider">Gift Set</h3>
+                        <ul class="grid grid-cols-1 divide-y tracking-wider">
+                            <li class="py-2 px-3"><a href="/products.html">Birthday</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Baby Shower</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Holiday</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Night Game</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Staycation</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Gentlemen</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Selfcare</a></li>
+                        </ul>
+
+                        <h3 class="ml-3 mt-2 font-bold text-lg tracking-wider">Singles</h3>
+                        <ul class="grid grid-cols-1 divide-y tracking-wider">
+                            <li class="py-2 px-3"><a href="/products.html">Packaging</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Cutlery</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Tumbler Bottle</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Candle</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Tea</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Tableware</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Stationary</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Bags</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Apparel</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Office Supply</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Bath</a></li>
+                            <li class="py-2 px-3"><a href="/products.html">Other</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- END: SIDEBAR -->
+
+        <section>
+            <!-- START: PRODUCT LIST -->
+            <main class="grid grid-cols-2 mt-4 mb-4 gap-4">
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <div class="absolute top-7 right-0">
+                            <span class="flex bg-orange text-white text-base py-1 px-4">NEW!</span>
+                        </div>
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-01.png" alt="product">
+                    </div>
+                    <div class="p-4">
+                        <div class="text-gray-dark-200 font-medium">Rp 50.0000</div>
+                        <h3 class="font-bold line-clamp-2">Naoko Ocha Mug</h3>
+                    </div>
+                </a>
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <div class="absolute top-7 right-0">
+                            <span class="flex bg-orange text-white text-base py-1 px-4">NEW!</span>
+                        </div>
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-02.png" alt="product">
+                    </div>
+                    <div class="p-4">
+                        <div class="text-gray-dark-200 font-medium">Rp 50.0000</div>
+                        <h3 class="font-bold line-clamp-2">Platinum Plate Set</h3>
+                    </div>
+                </a>
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <div class="absolute top-7 right-0">
+                            <span class="flex bg-orange text-white text-base py-1 px-4">NEW!</span>
+                        </div>
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-03.png" alt="product">
+                    </div>
+                    <div class="p-4">
+                        <div class="text-gray-dark-200 font-medium">Rp 50.0000</div>
+                        <h3 class="font-bold line-clamp-2">Naoko Ocha Mug</h3>
+                    </div>
+                </a>
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-04.png" alt="product">
+                    </div>
+                    <div class="p-4">
+                        <div class="text-gray-dark-200 font-medium">Rp 50.0000</div>
+                        <h3 class="font-bold line-clamp-2">Platinum Plate Set</h3>
+                    </div>
+                </a>
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-06.png" alt="product">
+                    </div>
+                    <div class="p-4">
+                        <div class="text-gray-dark-200 font-medium">Rp 50.0000</div>
+                        <h3 class="font-bold line-clamp-2">Naoko Ocha Mug</h3>
+                    </div>
+                </a>
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-07.png" alt="product">
+                    </div>
+                    <div class="p-4">
+                        <div class="text-gray-dark-200 font-medium">Rp 50.0000</div>
+                        <h3 class="font-bold line-clamp-2">Platinum Plate Set</h3>
+                    </div>
+                </a>
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-08.png" alt="product">
+                    </div>
+                    <div class="p-4">
+                        <div class="text-gray-dark-200 font-medium">Rp 50.0000</div>
+                        <h3 class="font-bold line-clamp-2">Platinum Plate Set</h3>
+                    </div>
+                </a>
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-09.png" alt="product">
+                    </div>
+                    <div class="p-4">
+                        <div class="text-gray-dark-200 font-medium">Rp 50.0000</div>
+                        <h3 class="font-bold line-clamp-2">Platinum Plate Set</h3>
+                    </div>
+                </a>
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-10.png" alt="product">
+                    </div>
+                    <div class="p-4">
+                        <div class="text-gray-dark-200 font-medium">Rp 50.0000</div>
+                        <h3 class="font-bold line-clamp-2">Platinum Plate Set</h3>
+                    </div>
+                </a>
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-11.png" alt="product">
+                    </div>
+                    <div class="p-4">
+                        <div class="text-gray-dark-200 font-medium">Rp 50.0000</div>
+                        <h3 class="font-bold line-clamp-2">Platinum Plate Set</h3>
+                    </div>
+                </a>
+
+            </main>
+            <!-- END: PRODUCT LIST -->
+            
+            <!-- START: PRODUCT PAGINATION -->
+            <div class="flex justify-center mt-9">
+                <div class="flex gap-10">
+                    <div class="flex-none w-14 h-14 text-center">
+                        <button class="shadow-[10px_0px_10px_0px_rgba(0,0,0,0.2)] p-3 rounded-full" type="button">
+                            <img class="w-7 block" src="dist/images/211686_back_arrow_icon.svg" alt="back icon">
+                        </button>
+                    </div>
+                    <div class="grow h-14 items-center flex tracking-wider font-bold">
+                        Page 1 / 15
+                    </div>
+                    <div class="flex-none w-14 h-14 text-center">
+                        <button class="shadow-[10px_0px_10px_0px_rgba(0,0,0,0.2)] p-3 rounded-full" type="button">
+                            <img class="w-7 block" src="dist/images/211688_forward_arrow_icon.svg" alt="forward icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END: PRODUCT PAGINATION -->
+        </section>
+    </section>
+
+    <!-- START: FOOTER -->
+    <footer id="contact" class="footer bg-no-repeat w-full bg-center bg-cover relative">
+        <div class="container xl:max-w-none 2xl:gap-16 p-7 xl:py-16 xl:px-20 lg:grid lg:grid-cols-3 lg:gap-10 relative text-white">
+            <div class="init_animate mb-5">
+                <h3 class="font-bold text-xl mb-2">Made Creatively</h3>
+                <p class="text-base">We helps everyone to create custom lifestyle and eco-friendly merchandise and gift</p>
+            </div>
+            <div class="init_animate mb-5">
+                <h3 class="font-bold text-xl mb-2">Our Location</h3>
+                <address class="not-italic">
+                    SOHO Pancoran, 19<sup>th</sup> Floor <br>
+                    MT Haryono St No. Kav 2-3 RT.1/RW.6 <br>
+                    West Tebet, Tebet, South Jakarta City, Jakarta 12810
+                </address>
+            </div>
+            <div class="init_animate">
+                <h3 class="font-bold text-xl mb-2">Contact Us</h3>
+                <p class="text-base">info@creativicamg.com</p>
+                <p class="text-base">+62 812 6000 2558 (Whatsapp Available)</p>
+            </div>
+            <div id="copyright" class="hidden xl:block xl:absolute xl:bottom-10 xl:right-10"></div>
         </div>
-        <div class="order-1">
-            list product
-        </div> -->
-    </aside>
+    </footer>
+    <!-- END: FOOTER -->
 </body>
 </html>

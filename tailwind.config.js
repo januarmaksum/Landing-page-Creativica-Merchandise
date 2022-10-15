@@ -14,8 +14,13 @@ module.exports = {
         'orange-light': '#ffcd6a',
         'orange-dark': '#ecb240',
         'gray-dark-100': '#808080',
+        'gray-dark-200': '#afafaf',
+        'gray-dark-300': '#575757',
       }
     },
     
   },
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ]
 }
