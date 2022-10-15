@@ -1,3 +1,5 @@
+"use strict";
+
 window.addEventListener('load', function () {
     const sidebar = document.querySelector('#sidebar')
     if (sidebar && sidebar.classList.contains('hidden')) {

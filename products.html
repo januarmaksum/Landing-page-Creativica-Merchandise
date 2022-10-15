@@ -69,30 +69,28 @@
     <!-- END: HEADER -->
 
     <!-- START: BREADCRUMB / SEARCH -->
-    <div class="grid grid-cols-1 md:grid-cols-[30rem,1fr]">
-        <div class="flex flex-col p-4">
-            <div class="relative">
-                <img class="absolute left-2 top-[50%] translate-y-[-50%] w-4" src="dist/images/4781817_brows_browsing_find_search_seo_icon.svg" alt="icon search">
-                <input class="border-4 w-full h-10 pl-8 focus:outline-none focus:border-gray-300" type="text" placeholder="Search product..">
+    <div class="grid grid-cols-1 md:grid-cols-[15rem,1fr] 2xl:grid-cols-[20rem,1fr] md:gap-4 m-4 2xl:m-14">
+        <div class="relative 2xl:pr-11">
+            <img class="absolute left-2 top-[50%] translate-y-[-50%] w-4" src="dist/images/4781817_brows_browsing_find_search_seo_icon.svg" alt="icon search">
+            <input class="border-4 w-full h-10 pl-8 focus:outline-none focus:border-gray-300" type="text" placeholder="Search product..">
+        </div>
+        <div class="flex justify-between items-center my-4 md:my-0 ">
+            <div class="w-10/12 md:w-6/12 truncate text-gray-dark-100 text-sm lg:text-lg">
+                <a href="/index.html">Home</a> / <a href="/products.html">Our Products</a> / <a href="/detail.html">Tableware</a>
             </div>
-            <div class="flex justify-between items-center my-4">
-                <div class="w-10/12 truncate text-gray-dark-100 text-sm">
-                    <a href="/index.html">Home</a> / <a href="/products.html">Our Products</a> / <a href="/detail.html">Tableware</a>
+            <div class="w-3/12 md:w-6/12 flex justify-end gap-3 text-gray-dark-100 text-sm lg:text-base">
+                <div onclick="handleModalListCategory()" class="md:hidden">
+                    <img class="w-6" src="dist/images/352389_bulleted_format_list_icon.svg" alt="list category">
                 </div>
-                <div class="w-3/12 flex justify-end gap-3">
-                    <div onclick="handleModalListCategory()" class="md:hidden">
-                        <img class="w-6" src="dist/images/352389_bulleted_format_list_icon.svg" alt="list category">
+                <div class="flex gap-1 items-center">
+                    <div class="hidden md:block">
+                        105 products
                     </div>
-                    <div>
-                        <div class="hidden">
-                            105 products
-                        </div>
-                        <div class="flex">
-                            <div class="hidden">|</div>
-                            <div>
-                                <div class="hidden">Sort by</div> 
-                                <img class="w-6" src="dist/images/8674352_ic_fluent_arrow_sort_regular_icon.svg" alt="icon sort product">
-                            </div>
+                    <div class="flex gap-1 items-center">
+                        <div class="hidden md:block">|</div>
+                        <div class="flex gap-1 items-center">
+                            <div class="hidden md:block">Sort by</div> 
+                            <img class="w-6" src="dist/images/8674352_ic_fluent_arrow_sort_regular_icon.svg" alt="icon sort product">
                         </div>
                     </div>
                 </div>
@@ -101,40 +99,40 @@
     </div>
     <!-- END: BREADCRUMB / SEARCH -->
 
-    <section class="grid grid-cols-1 md:grid-cols-[30rem,1fr] px-4 mb-11">
+    <section class="grid grid-cols-1 md:grid-cols-[15rem,1fr] 2xl:grid-cols-[20rem,1fr] md:gap-4 md:mt-8 2xl:mt-14 mx-4 2xl:mx-14 mb-11">
         <!-- START: SIDEBAR -->
         <aside>
             <h2 class="flex items-center text-xl font-bold tracking-wider">
                 Our Products
             </h2>
             <div class="modal-lists">
-                <div class="modal-lists-wrapper m-12 flex justify-center items-center">
+                <div class="modal-lists-wrapper m-12 md:m-0 flex md:block justify-center items-center">
                     <div class="modal-lists-content">
-                        <h3 class="ml-3 mt-2 font-bold text-lg tracking-wider">Gift Set</h3>
-                        <ul class="grid grid-cols-1 divide-y tracking-wider">
-                            <li class="py-2 px-3"><a href="/products.html">Birthday</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Baby Shower</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Holiday</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Night Game</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Staycation</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Gentlemen</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Selfcare</a></li>
+                        <h3 class="ml-3 mt-2 font-bold text-lg md:text-base tracking-wider">Gift Set</h3>
+                        <ul class="grid grid-cols-1 divide-y md:divide-y-0 md:ml-4 tracking-wider">
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Birthday</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Baby Shower</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Holiday</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Night Game</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Staycation</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Gentlemen</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Selfcare</a></li>
                         </ul>
 
-                        <h3 class="ml-3 mt-2 font-bold text-lg tracking-wider">Singles</h3>
-                        <ul class="grid grid-cols-1 divide-y tracking-wider">
-                            <li class="py-2 px-3"><a href="/products.html">Packaging</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Cutlery</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Tumbler Bottle</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Candle</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Tea</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Tableware</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Stationary</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Bags</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Apparel</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Office Supply</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Bath</a></li>
-                            <li class="py-2 px-3"><a href="/products.html">Other</a></li>
+                        <h3 class="ml-3 mt-2 font-bold text-lg md:text-base tracking-wider">Singles</h3>
+                        <ul class="grid grid-cols-1 divide-y md:divide-y-0 md:ml-4 tracking-wider">
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Packaging</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Cutlery</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Tumbler Bottle</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Candle</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Tea</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Tableware</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Stationary</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Bags</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Apparel</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Office Supply</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Bath</a></li>
+                            <li class="py-2 px-3 md:py-1"><a href="/products.html">Other</a></li>
                         </ul>
                     </div>
                 </div>
@@ -144,29 +142,17 @@
 
         <section>
             <!-- START: PRODUCT LIST -->
-            <main class="grid grid-cols-2 mt-4 mb-4 gap-4">
+            <main class="grid grid-cols-2 lg:grid-cols-3 mt-4 md:mt-0 mb-4 gap-4 md:gap-9 2xl:gap-12">
                 <a href="/products.html" class="block no-underline">
                     <div class="relative">
                         <div class="absolute top-7 right-0">
                             <span class="flex bg-orange text-white text-base py-1 px-4">NEW!</span>
                         </div>
-                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-01.png" alt="product">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-60 md:h-80 lg:h-[30rem] 2xl:h-[40rem] object-cover" src="dist/images/product-01.png" alt="product">
                     </div>
-                    <div class="p-4">
-                        <div class="text-sm text-gray-dark-200 font-medium">Rp 50.000</div>
-                        <h3 class="text-sm font-bold line-clamp-2">Naoko Ocha Mug</h3>
-                    </div>
-                </a>
-                <a href="/products.html" class="block no-underline">
-                    <div class="relative">
-                        <div class="absolute top-7 right-0">
-                            <span class="flex bg-orange text-white text-base py-1 px-4">NEW!</span>
-                        </div>
-                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-02.png" alt="product">
-                    </div>
-                    <div class="p-4">
-                        <div class="text-sm text-gray-dark-200 font-medium">Rp 50.000</div>
-                        <h3 class="text-sm font-bold line-clamp-2">Platinum Plate Set</h3>
+                    <div class="p-4 2xl:p-6">
+                        <div class="text-sm lg:text-xl 2xl:text-2xl text-gray-dark-200 font-medium">Rp 50.000</div>
+                        <h3 class="text-sm lg:text-xl 2xl:text-2xl font-bold line-clamp-2">Naoko Ocha Mug</h3>
                     </div>
                 </a>
                 <a href="/products.html" class="block no-underline">
@@ -174,74 +160,86 @@
                         <div class="absolute top-7 right-0">
                             <span class="flex bg-orange text-white text-base py-1 px-4">NEW!</span>
                         </div>
-                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-03.png" alt="product">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-60 md:h-80 lg:h-[30rem] 2xl:h-[40rem] object-cover" src="dist/images/product-02.png" alt="product">
                     </div>
-                    <div class="p-4">
-                        <div class="text-sm text-gray-dark-200 font-medium">Rp 50.000</div>
-                        <h3 class="text-sm font-bold line-clamp-2">Naoko Ocha Mug</h3>
-                    </div>
-                </a>
-                <a href="/products.html" class="block no-underline">
-                    <div class="relative">
-                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-04.png" alt="product">
-                    </div>
-                    <div class="p-4">
-                        <div class="text-sm text-gray-dark-200 font-medium">Rp 50.000</div>
-                        <h3 class="text-sm font-bold line-clamp-2">Platinum Plate Set</h3>
+                    <div class="p-4 2xl:p-6">
+                        <div class="text-sm lg:text-xl 2xl:text-2xl text-gray-dark-200 font-medium">Rp 50.000</div>
+                        <h3 class="text-sm lg:text-xl 2xl:text-2xl font-bold line-clamp-2">Platinum Plate Set</h3>
                     </div>
                 </a>
                 <a href="/products.html" class="block no-underline">
                     <div class="relative">
-                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-06.png" alt="product">
+                        <div class="absolute top-7 right-0">
+                            <span class="flex bg-orange text-white text-base py-1 px-4">NEW!</span>
+                        </div>
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-60 md:h-80 lg:h-[30rem] 2xl:h-[40rem] object-cover" src="dist/images/product-03.png" alt="product">
                     </div>
-                    <div class="p-4">
-                        <div class="text-sm text-gray-dark-200 font-medium">Rp 50.000</div>
-                        <h3 class="text-sm font-bold line-clamp-2">Naoko Ocha Mug</h3>
-                    </div>
-                </a>
-                <a href="/products.html" class="block no-underline">
-                    <div class="relative">
-                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-07.png" alt="product">
-                    </div>
-                    <div class="p-4">
-                        <div class="text-sm text-gray-dark-200 font-medium">Rp 50.000</div>
-                        <h3 class="text-sm font-bold line-clamp-2">Platinum Plate Set</h3>
+                    <div class="p-4 2xl:p-6">
+                        <div class="text-sm lg:text-xl 2xl:text-2xl text-gray-dark-200 font-medium">Rp 50.000</div>
+                        <h3 class="text-sm lg:text-xl 2xl:text-2xl font-bold line-clamp-2">Naoko Ocha Mug</h3>
                     </div>
                 </a>
                 <a href="/products.html" class="block no-underline">
                     <div class="relative">
-                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-08.png" alt="product">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-60 md:h-80 lg:h-[30rem] 2xl:h-[40rem] object-cover" src="dist/images/product-04.png" alt="product">
                     </div>
-                    <div class="p-4">
-                        <div class="text-sm text-gray-dark-200 font-medium">Rp 50.000</div>
-                        <h3 class="text-sm font-bold line-clamp-2">Platinum Plate Set</h3>
-                    </div>
-                </a>
-                <a href="/products.html" class="block no-underline">
-                    <div class="relative">
-                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-09.png" alt="product">
-                    </div>
-                    <div class="p-4">
-                        <div class="text-sm text-gray-dark-200 font-medium">Rp 50.000</div>
-                        <h3 class="text-sm font-bold line-clamp-2">Platinum Plate Set</h3>
+                    <div class="p-4 2xl:p-6">
+                        <div class="text-sm lg:text-xl 2xl:text-2xl text-gray-dark-200 font-medium">Rp 50.000</div>
+                        <h3 class="text-sm lg:text-xl 2xl:text-2xl font-bold line-clamp-2">Platinum Plate Set</h3>
                     </div>
                 </a>
                 <a href="/products.html" class="block no-underline">
                     <div class="relative">
-                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-10.png" alt="product">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-60 md:h-80 lg:h-[30rem] 2xl:h-[40rem] object-cover" src="dist/images/product-06.png" alt="product">
                     </div>
-                    <div class="p-4">
-                        <div class="text-sm text-gray-dark-200 font-medium">Rp 50.000</div>
-                        <h3 class="text-sm font-bold line-clamp-2">Platinum Plate Set</h3>
+                    <div class="p-4 2xl:p-6">
+                        <div class="text-sm lg:text-xl 2xl:text-2xl text-gray-dark-200 font-medium">Rp 50.000</div>
+                        <h3 class="text-sm lg:text-xl 2xl:text-2xl font-bold line-clamp-2">Naoko Ocha Mug</h3>
                     </div>
                 </a>
                 <a href="/products.html" class="block no-underline">
                     <div class="relative">
-                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-[15rem] object-cover" src="dist/images/product-11.png" alt="product">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-60 md:h-80 lg:h-[30rem] 2xl:h-[40rem] object-cover" src="dist/images/product-07.png" alt="product">
                     </div>
-                    <div class="p-4">
-                        <div class="text-sm text-gray-dark-200 font-medium">Rp 50.000</div>
-                        <h3 class="text-sm font-bold line-clamp-2">Platinum Plate Set</h3>
+                    <div class="p-4 2xl:p-6">
+                        <div class="text-sm lg:text-xl 2xl:text-2xl text-gray-dark-200 font-medium">Rp 50.000</div>
+                        <h3 class="text-sm lg:text-xl 2xl:text-2xl font-bold line-clamp-2">Platinum Plate Set</h3>
+                    </div>
+                </a>
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-60 md:h-80 lg:h-[30rem] 2xl:h-[40rem] object-cover" src="dist/images/product-08.png" alt="product">
+                    </div>
+                    <div class="p-4 2xl:p-6">
+                        <div class="text-sm lg:text-xl 2xl:text-2xl text-gray-dark-200 font-medium">Rp 50.000</div>
+                        <h3 class="text-sm lg:text-xl 2xl:text-2xl font-bold line-clamp-2">Platinum Plate Set</h3>
+                    </div>
+                </a>
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-60 md:h-80 lg:h-[30rem] 2xl:h-[40rem] object-cover" src="dist/images/product-09.png" alt="product">
+                    </div>
+                    <div class="p-4 2xl:p-6">
+                        <div class="text-sm lg:text-xl 2xl:text-2xl text-gray-dark-200 font-medium">Rp 50.000</div>
+                        <h3 class="text-sm lg:text-xl 2xl:text-2xl font-bold line-clamp-2">Platinum Plate Set</h3>
+                    </div>
+                </a>
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-60 md:h-80 lg:h-[30rem] 2xl:h-[40rem] object-cover" src="dist/images/product-10.png" alt="product">
+                    </div>
+                    <div class="p-4 2xl:p-6">
+                        <div class="text-sm lg:text-xl 2xl:text-2xl text-gray-dark-200 font-medium">Rp 50.000</div>
+                        <h3 class="text-sm lg:text-xl 2xl:text-2xl font-bold line-clamp-2">Platinum Plate Set</h3>
+                    </div>
+                </a>
+                <a href="/products.html" class="block no-underline">
+                    <div class="relative">
+                        <img class="shadow-[0_5px_15px_rgba(0,0,0,.3)] w-full h-60 md:h-80 lg:h-[30rem] 2xl:h-[40rem] object-cover" src="dist/images/product-11.png" alt="product">
+                    </div>
+                    <div class="p-4 2xl:p-6">
+                        <div class="text-sm lg:text-xl 2xl:text-2xl text-gray-dark-200 font-medium">Rp 50.000</div>
+                        <h3 class="text-sm lg:text-xl 2xl:text-2xl font-bold line-clamp-2">Platinum Plate Set</h3>
                     </div>
                 </a>
 
@@ -249,7 +247,7 @@
             <!-- END: PRODUCT LIST -->
             
             <!-- START: PRODUCT PAGINATION -->
-            <div class="flex justify-center mt-9">
+            <div class="flex justify-center mt-9 lg:mb-16 2xl:mb-24">
                 <div class="flex gap-10">
                     <div class="flex-none w-14 h-14 text-center">
                         <button class="shadow-[10px_0px_10px_0px_rgba(0,0,0,0.2)] p-3 rounded-full" type="button">

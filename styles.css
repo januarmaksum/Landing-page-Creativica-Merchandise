@@ -488,6 +488,28 @@ body {
 }
 
 @media (min-width: 768px) {
+    .modal-lists {
+        position: relative;
+        opacity: 1;
+        visibility: initial;
+        pointer-events: all;
+        background-color: transparent;
+        overflow: visible;
+    }
+
+    .modal-lists-wrapper {
+        min-height: auto;
+    }
+
+    .modal-lists-content {
+        overflow: visible;
+        transform: scale(1);
+        box-shadow: none;
+        max-width: none;
+        width: auto;
+        border-radius: unset;
+    }
+
     .object-intro-1 {
         width: 41rem;
         height: 41rem;
