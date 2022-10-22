@@ -1,0 +1,136 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#d28b12">
+    <title>Creativica Media Global - Detail Products</title>
+    <meta name="description" content="Made Creatively with Creativica - Merchandising Service">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="dist/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="dist/images/favicon.ico" type="image/x-icon">
+    <link href="dist/output.css" rel="stylesheet">
+    <script src="dist/main.js" defer></script>
+</head>
+<body class="menu-fixed">
+    <!-- START: HEADER -->
+    <div class="flex justify-between bg-orange relative pt-5 pb-5">
+        <a href="/index.html" class="flex justify-center items-center w-12 ml-4">
+            <img src="dist/images/logo-white.png" alt="logo creativica media global">
+        </a>
+        <a href="/index.html" class="block w-40 mx-auto absolute left-0 right-0 top-[50%] translate-y-[-50%]">
+            <img src="dist/images/logo-text.png" alt="logo creativica media global">
+        </a>
+        <div class="flex justify-center items-center pr-4">
+            <!-- START: MENU SIDEBAR -->
+            <div class="menu-title absolute text-2xl md:text-3xl font-light">Made <span class="font-bold">Creatively</span></div>
+            <div onclick="handleMenuSidebar()" class="top-[52px] md:top-[60px] right-[20px] md:right-[41px] sidebar-toggler fixed">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <aside id="sidebar" class="hidden">
+                <div class="sidebar-content pt-24">
+                    <nav class="text-right">
+                        <ul class="grid gap-4">
+                            <li>
+                                <a class="link font-bold hover:text-white text-xl md:text-3xl xl:text-2xl 2xl:text-3xl  uppercase" href="/index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="link font-bold hover:text-white text-xl md:text-3xl xl:text-2xl 2xl:text-3xl  uppercase" href="#about">About us</a>
+                            </li>
+                            <li>
+                                <a class="link font-bold hover:text-white text-xl md:text-3xl xl:text-2xl 2xl:text-3xl uppercase" href="#our-team">Meet our team</a>
+                            </li>
+                            <li>
+                                <a class="link font-bold hover:text-white text-xl md:text-3xl xl:text-2xl 2xl:text-3xl uppercase" href="/products.html">our products</a>
+                            </li>
+                            <li>
+                                <a class="link font-bold hover:text-white text-xl md:text-3xl xl:text-2xl 2xl:text-3xl uppercase" href="#form">direct quotation</a>
+                            </li>
+                            <li>
+                                <a class="link font-bold hover:text-white text-xl md:text-3xl xl:text-2xl 2xl:text-3xl uppercase" href="#contact">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sidebar-footer absolute">
+                    <a class="icon flex items-center no-underline" href="https://www.instagram.com/creativica.id/" target="_blank">
+                        <img class="w-8" src="dist/images/icons8-instagram.svg" alt="https://icons8.com/icon/32292/instagram" />
+                        <div class="icon-title ml-2 font-medium text-xl">Creativica.id</div>
+                    </a>
+                </div>
+            </aside>
+            <!-- END: MENU SIDEBAR -->
+        </div>
+    </div>
+    <!-- END: HEADER -->
+
+    <!-- Tab links -->
+    <section class="flex">        
+        <!-- Tab content -->
+        <div class="flex-shrink max-h-80 overflow-y-scroll p-2">
+            <picture 
+                id="defaultOpen" 
+                class="flex p-1 border border-gray-100"
+                onclick="openCity(event, 'London')"
+                >
+                <img class="object-cover h-14 w-full" src="dist/images/product-02.png" alt="image product" />
+            </picture>
+            <picture                 
+                class="flex p-1 border border-gray-100"
+                onclick="openCity(event, 'Paris')"
+                >
+                <img class="object-cover h-14 w-full" src="dist/images/product-03.png" alt="image product" />
+            </picture>
+            <picture                 
+                class="flex p-1 border border-gray-100"
+                onclick="openCity(event, 'Tokyo')"
+                >
+                <img class="object-cover h-14 w-full" src="dist/images/product-04.png" alt="image product" />
+            </picture>
+        </div>
+        <div class="flex-grow">
+            <picture id="London" class="display-product bg-gray-300">
+                <img class="object-contain h-80 w-full" src="dist/images/product-02.png" alt="image product" />
+            </picture>
+            
+            <picture id="Paris" class="display-product bg-gray-300">
+                <img class="object-contain h-80 w-full" src="dist/images/product-03.png" alt="image product" />
+            </picture>
+            
+            <picture id="Tokyo" class="display-product bg-gray-300">
+                <img class="object-contain h-80 w-full" src="dist/images/product-04.png" alt="image product" />
+            </picture>
+        </div>
+
+    </section>
+
+    <!-- START: FOOTER -->
+    <footer id="contact" class="footer bg-no-repeat w-full bg-center bg-cover relative">
+        <div class="container xl:max-w-none 2xl:gap-16 p-7 xl:py-16 xl:px-20 lg:grid lg:grid-cols-3 lg:gap-10 relative text-white">
+            <div class="init_animate mb-5">
+                <h3 class="font-bold text-xl mb-2">Made Creatively</h3>
+                <p class="text-base">We helps everyone to create custom lifestyle and eco-friendly merchandise and gift</p>
+            </div>
+            <div class="init_animate mb-5">
+                <h3 class="font-bold text-xl mb-2">Our Location</h3>
+                <address class="not-italic">
+                    SOHO Pancoran, 19<sup>th</sup> Floor <br>
+                    MT Haryono St No. Kav 2-3 RT.1/RW.6 <br>
+                    West Tebet, Tebet, South Jakarta City, Jakarta 12810
+                </address>
+            </div>
+            <div class="init_animate">
+                <h3 class="font-bold text-xl mb-2">Contact Us</h3>
+                <p class="text-base">info@creativicamg.com</p>
+                <p class="text-base">+62 812 6000 2558 (Whatsapp Available)</p>
+            </div>
+            <div id="copyright" class="hidden xl:block xl:absolute xl:bottom-10 xl:right-10"></div>
+        </div>
+    </footer>
+    <!-- END: FOOTER -->
+</body>
+</html>

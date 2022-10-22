@@ -389,7 +389,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 9992;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -424,6 +424,27 @@ body {
 
 .modal-lists.open .modal-lists-content {
     transform: scale(1);
+}
+
+/* Style the tab content */
+.display-product {
+    display: none;
+}
+
+.display-product {
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 320px) {
