@@ -655,6 +655,29 @@ body {
     .footer-divider {
         background-color: rgb(255 255 255 / 45%);
     }
+
+    .section-overlap::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 92%;
+        height: 100%;
+        @apply bg-orange;        
+    }
+
+    .section-overlap__right::after {
+        left: 0;
+        border-top-right-radius: 8rem;
+        border-bottom-right-radius: 8rem;
+        box-shadow: rgb(0 0 0 / 35%) 8px 0px 15px;
+    }
+
+    .section-overlap__left::after {
+        right: 0;
+        border-top-left-radius: 8rem;
+        border-bottom-left-radius: 8rem;
+        box-shadow: rgb(0 0 0 / 35%) -8px 0px 15px;
+    }
 }
 
 @media (min-width: 1536px) {

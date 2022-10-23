@@ -68,120 +68,140 @@
     </div>
     <!-- END: HEADER -->
 
-    <!-- START: IMAGE PRODUCT -->
-    <section class="flex">
-        <div class="flex-shrink max-h-80 overflow-y-scroll p-2">
-            <picture 
-                id="defaultOpen" 
-                class="flex p-1 product-nav"
-                onclick="showDisplayProduct(event, 'London')"
-                >
-                <img class="object-cover h-14 w-full" src="dist/images/product-02.png" alt="image product" />
-            </picture>
-            <picture                 
-                class="flex p-1 product-nav"
-                onclick="showDisplayProduct(event, 'Paris')"
-                >
-                <img class="object-cover h-14 w-full" src="dist/images/product-03.png" alt="image product" />
-            </picture>
-            <picture                 
-                class="flex p-1 product-nav"
-                onclick="showDisplayProduct(event, 'Tokyo')"
-                >
-                <img class="object-cover h-14 w-full" src="dist/images/product-04.png" alt="image product" />
-            </picture>
-        </div>
-        <div class="flex-grow">
-            <picture id="London" class="display-product bg-gray-300">
-                <img class="object-contain h-80 w-full" src="dist/images/product-02.png" alt="image product" />
-            </picture>
-            
-            <picture id="Paris" class="display-product bg-gray-300">
-                <img class="object-contain h-80 w-full" src="dist/images/product-03.png" alt="image product" />
-            </picture>
-            
-            <picture id="Tokyo" class="display-product bg-gray-300">
-                <img class="object-contain h-80 w-full" src="dist/images/product-04.png" alt="image product" />
-            </picture>
-        </div>
-    </section>
-    <!-- END: IMAGE PRODUCT -->
+    <section class="grid md:grid-cols-[20rem,1fr] lg:grid-cols-[30rem,1fr] xl:grid-cols-[40rem,1fr] 2xl:grid-cols-[55rem,1fr] md:gap-5 xl:gap-8 md:m-9 xl:mt-16 xl:mb-24 xl:mx-32 2xl:mt-20 2xl:mx-36">
+        <!-- START: IMAGE PRODUCT -->
+        <section class="flex xl:grid xl:grid-cols-[8rem,1fr] 2xl:grid-cols-[10rem,1fr] gap-2 xl:gap-8">
+            <div class="flex-shrink xl:flex-none pt-2 pl-2 md:pt-0 md:pl-0 max-h-80 xl:max-h-[43rem] 2xl:max-h-[55rem] overflow-y-scroll remove-scrollbar">
+                <picture 
+                    id="defaultOpen" 
+                    class="flex p-1 xl:mb-4 product-nav cursor-pointer"
+                    onclick="showDisplayProduct(event, 'London')"
+                    >
+                    <img class="object-cover h-14 xl:h-44 2xl:h-52 w-full" src="dist/images/product-02.png" alt="image product" />
+                </picture>
+                <picture                 
+                    class="flex p-1 xl:mb-4 product-nav cursor-pointer"
+                    onclick="showDisplayProduct(event, 'Paris')"
+                    >
+                    <img class="object-cover h-14 xl:h-44 2xl:h-52 w-full" src="dist/images/product-03.png" alt="image product" />
+                </picture>
+                <picture                 
+                    class="flex p-1 xl:mb-4 product-nav cursor-pointer"
+                    onclick="showDisplayProduct(event, 'Tokyo')"
+                    >
+                    <img class="object-cover h-14 xl:h-44 2xl:h-52 w-full" src="dist/images/product-04.png" alt="image product" />
+                </picture>
+                <picture                 
+                    class="flex p-1 xl:mb-4 product-nav cursor-pointer"
+                    onclick="showDisplayProduct(event, 'German')"
+                    >
+                    <img class="object-cover h-14 xl:h-44 2xl:h-52 w-full" src="dist/images/product-05.png" alt="image product" />
+                </picture>
+            </div>
+            <div class="flex-grow xl:flex-none">
+                <picture id="London" class="display-product bg-gray-300 xl:bg-transparent">
+                    <img class="object-contain xl:object-cover h-80 lg:h-96 xl:h-[43rem] 2xl:h-[55rem] w-full" src="dist/images/product-02.png" alt="image product" />
+                </picture>
+                
+                <picture id="Paris" class="display-product bg-gray-300 xl:bg-transparent">
+                    <img class="object-contain xl:object-cover h-80 lg:h-96 xl:h-[43rem] 2xl:h-[55rem] w-full" src="dist/images/product-03.png" alt="image product" />
+                </picture>
+                
+                <picture id="Tokyo" class="display-product bg-gray-300 xl:bg-transparent">
+                    <img class="object-contain xl:object-cover h-80 lg:h-96 xl:h-[43rem] 2xl:h-[55rem] w-full" src="dist/images/product-04.png" alt="image product" />
+                </picture>
 
-    <!-- START: BREADCRUMB -->
-    <div class="grid grid-cols-1 md:grid-cols-[15rem,1fr] 2xl:grid-cols-[20rem,1fr] md:gap-4 mx-4 2xl:m-14">
-        <div class="flex justify-between items-center my-4 md:my-0 ">
-            <nav class="w-10/12 md:w-6/12 truncate text-gray-dark-100 text-sm lg:text-lg">
-                <a href="/index.html">Home</a> / <a href="/products.html">Our Products</a> / <a href="/detail.html">Tableware</a>
-            </nav>
-        </div>
-    </div>
-    <!-- END: BREADCRUMB -->
-
-    <!-- START: PRODUCT DESCRIPTION -->
-    <section class="mx-4 mb-8">
-        <div class="mb-3">
-            <h1 class="text-2xl font-bold">Moon Tumbler</h1>
-            <p class="tracking-widest">Rp 50.000</p>
-        </div>
-        <p>Extra Resistant, Fully</p>
-        <p>Tempered Glass,</p>
-        <p>Dishwasher safe</p>
-        <p>500ml</p>
-        <p>include borocilicate</p>
-        <p>straw</p>
-        <div class="mt-5">
-            <a href="#" class="inline-block bg-orange hover:bg-orange-dark focus:outline-none focus:ring focus:ring-orange active:bg-orange-dark px-5 py-2 text-lg leading-5 tracking-widest text-white">
-                CONTACT US FOR INFO
-            </a>
-        </div>
-    </section>
-    <!-- END: PRODUCT DESCRIPTION -->
-
-    <!-- START: OTHER PRODUCT 1 -->
-    <section class="bg-orange overflow-hidden py-8 rounded-r-3xl shadow-[0_5px_15px_rgba(0,0,0,.3)] mb-8">
-        <h2 class="text-white text-2xl font-bold text-center">Customized</h2>
-        <p class="text-center text-xl text-white">option</p>
-
-        <section class="overflow-x-scroll remove-scrollbar">
-            <div class="w-max gap-4 flex p-5 flex-nowrap">
-                <a href="#" class="w-fit text-center text-white">
-                    <img class="shadow-md w-52 h-52 object-cover" src="dist/images/other-product-01.png" alt="other product" />
-                    <h3 class="font-bold tracking-wider mt-4">Uv Printed</h3>
-                </a>
-                <a href="#" class="w-fit text-center text-white">
-                    <img class="shadow-md w-52 h-52 object-cover" src="dist/images/other-product-02.png" alt="other product" />
-                    <h3 class="font-bold tracking-wider mt-4">Laser Engraved</h3>
-                </a>
-                <a href="#" class="w-fit text-center text-white">
-                    <img class="shadow-md w-52 h-52 object-cover" src="dist/images/other-product-03.png" alt="other product" />
-                    <h3 class="font-bold tracking-wider mt-4">Decorative Paper Wrap</h3>
-                </a>
+                <picture id="German" class="display-product bg-gray-300 xl:bg-transparent">
+                    <img class="object-contain xl:object-cover h-80 lg:h-96 xl:h-[43rem] 2xl:h-[55rem] w-full" src="dist/images/product-05.png" alt="image product" />
+                </picture>
             </div>
         </section>
+        <!-- END: IMAGE PRODUCT -->
+
+        <!-- START: PRODUCT DESCRIPTION -->
+        <section class="xl:mt-24 xl:ml-10">
+            <!-- START: BREADCRUMB -->
+            <div class="grid grid-cols-1 md:mb-4 mx-4 2xl:m-4">
+                <div class="flex justify-between items-center my-4 md:my-0 ">
+                    <nav class="truncate text-gray-dark-100 text-sm lg:text-lg">
+                        <a href="/index.html">Home</a> / <a href="/products.html">Our Products</a> / <a href="/detail.html">Tableware</a>
+                    </nav>
+                </div>
+            </div>
+            <!-- END: BREADCRUMB -->
+
+            <section class="mx-4 mb-8">
+                <div class="mb-3 xl:mb-6">
+                    <h1 class="text-2xl font-bold xl:text-5xl">Moon Tumbler</h1>
+                    <p class="tracking-widest xl:text-3xl">Rp 50.000</p>
+                </div>
+                <div class="xl:text-lg">
+                    <p>Extra Resistant, Fully</p>
+                    <p>Tempered Glass,</p>
+                    <p>Dishwasher safe</p>
+                    <p>500ml</p>
+                    <p>include borocilicate</p>
+                    <p>straw</p>
+                </div>
+                <div class="mt-5 xl:mt-8">
+                    <a href="#" class="inline-block bg-orange hover:bg-orange-dark focus:outline-none focus:ring focus:ring-orange active:bg-orange-dark px-5 py-2 xl:px-10 xl:py-5 text-lg xl:text-xl leading-5 tracking-widest text-white">
+                        CONTACT US FOR INFO
+                    </a>
+                </div>
+            </section>
+        </section>
+        <!-- END: PRODUCT DESCRIPTION -->
+    </section>
+
+    <!-- START: OTHER PRODUCT 1 -->
+    <section class="bg-orange xl:bg-transparent xl:relative section-overlap section-overlap__right overflow-hidden xl:overflow-visible py-8 xl:py-12 rounded-r-3xl shadow-[0_5px_15px_rgba(0,0,0,.3)] xl:shadow-none mb-8 lg:mb-12">
+        <div class="relative xl:z-10">
+            <h2 class="text-white text-2xl xl:text-3xl font-bold text-center">Customized</h2>
+            <p class="text-center text-xl xl:text-2xl text-white">option</p>
+
+            <section class="overflow-x-scroll remove-scrollbar md:flex md:justify-center">
+                <div class="w-max gap-4 lg:gap-8 2xl:gap-20 flex p-5 flex-nowrap">
+                    <a href="#" class="w-fit text-center text-white">
+                        <img class="shadow-md w-52 xl:w-72 2xl:w-96 h-52 xl:h-72 2xl:h-96 object-cover" src="dist/images/other-product-01.png" alt="other product" />
+                        <h3 class="font-bold tracking-wider mt-4 xl:mt-6 xl:text-lg">Uv Printed</h3>
+                    </a>
+                    <a href="#" class="w-fit text-center text-white">
+                        <img class="shadow-md w-52 xl:w-72 2xl:w-96 h-52 xl:h-72 2xl:h-96 object-cover" src="dist/images/other-product-02.png" alt="other product" />
+                        <h3 class="font-bold tracking-wider mt-4 xl:mt-6 xl:text-lg">Laser Engraved</h3>
+                    </a>
+                    <a href="#" class="w-fit text-center text-white">
+                        <img class="shadow-md w-52 xl:w-72 2xl:w-96 h-52 xl:h-72 2xl:h-96 object-cover" src="dist/images/other-product-03.png" alt="other product" />
+                        <h3 class="font-bold tracking-wider mt-4 xl:mt-6 xl:text-lg">Decorative Paper Wrap</h3>
+                    </a>
+                </div>
+            </section>
+        </div>
     </section>
     <!-- END: OTHER PRODUCT 1 -->
 
     <!-- START: OTHER PRODUCT 2 -->
-    <section class="bg-orange overflow-hidden py-8 rounded-l-3xl shadow-[0_5px_15px_rgba(0,0,0,.3)] mb-16">
-        <h2 class="text-white text-2xl font-bold text-center">Packaging</h2>
-        <p class="text-center text-xl text-white">option</p>
-
-        <section class="overflow-x-scroll remove-scrollbar">
-            <div class="w-max gap-4 flex p-5 flex-nowrap">
-                <a href="#" class="w-fit text-center text-white">
-                    <img class="shadow-md w-52 h-52 object-cover" src="dist/images/other-product-04.png" alt="other product" />
-                    <h3 class="font-bold tracking-wider mt-4">Customized Soft Box</h3>
-                </a>
-                <a href="#" class="w-fit text-center text-white">
-                    <img class="shadow-md w-52 h-52 object-cover" src="dist/images/other-product-05.png" alt="other product" />
-                    <h3 class="font-bold tracking-wider mt-4">Canvas Pouch</h3>
-                </a>
-                <a href="#" class="w-fit text-center text-white">
-                    <img class="shadow-md w-52 h-52 object-cover" src="dist/images/other-product-06.png" alt="other product" />
-                    <h3 class="font-bold tracking-wider mt-4">Decorative Paper Wrap</h3>
-                </a>
-            </div>
-        </section>
+    <section class="bg-orange xl:bg-transparent xl:relative section-overlap section-overlap__left overflow-hidden xl:overflow-visible py-8 xl:py-12 rounded-l-3xl shadow-[0_5px_15px_rgba(0,0,0,.3)] xl:shadow-none mb-16 xl:mb-20">
+        <div class="relative xl:z-10">
+            <h2 class="text-white text-2xl xl:text-3xl font-bold text-center">Packaging</h2>
+            <p class="text-center text-xl xl:text-2xl text-white">option</p>
+    
+            <section class="overflow-x-scroll remove-scrollbar md:flex md:justify-center">
+                <div class="w-max gap-4 lg:gap-8 2xl:gap-20 flex p-5 flex-nowrap">
+                    <a href="#" class="w-fit text-center text-white">
+                        <img class="shadow-md w-52 xl:w-72 2xl:w-96 h-52 xl:h-72 2xl:h-96 object-cover" src="dist/images/other-product-04.png" alt="other product" />
+                        <h3 class="font-bold tracking-wider mt-4 xl:mt-6 xl:text-lg">Customized Soft Box</h3>
+                    </a>
+                    <a href="#" class="w-fit text-center text-white">
+                        <img class="shadow-md w-52 xl:w-72 2xl:w-96 h-52 xl:h-72 2xl:h-96 object-cover" src="dist/images/other-product-05.png" alt="other product" />
+                        <h3 class="font-bold tracking-wider mt-4 xl:mt-6 xl:text-lg">Canvas Pouch</h3>
+                    </a>
+                    <a href="#" class="w-fit text-center text-white">
+                        <img class="shadow-md w-52 xl:w-72 2xl:w-96 h-52 xl:h-72 2xl:h-96 object-cover" src="dist/images/other-product-06.png" alt="other product" />
+                        <h3 class="font-bold tracking-wider mt-4 xl:mt-6 xl:text-lg">Decorative Paper Wrap</h3>
+                    </a>
+                </div>
+            </section>
+        </div>
     </section>
     <!-- END: OTHER PRODUCT 2 -->
 
