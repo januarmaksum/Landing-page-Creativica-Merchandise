@@ -426,17 +426,32 @@ body {
     transform: scale(1);
 }
 
-/* Style the tab content */
 .display-product {
     display: none;
 }
 
 .display-product {
     animation: fadeEffect 1s;
-    /* Fading effect takes 1 second */
 }
 
-/* Go from zero to full opacity */
+.product-nav {
+    @apply border;
+    @apply border-transparent;
+}
+
+.product-nav.active {
+    @apply border-gray-400;
+}
+
+.remove-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.remove-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 @keyframes fadeEffect {
     from {
         opacity: 0;
