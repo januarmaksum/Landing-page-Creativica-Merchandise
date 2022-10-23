@@ -116,6 +116,7 @@ function showDisplayProduct(evt, product) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    document.getElementById(product).style.display = "block";
+    const selectedProduct = document.querySelector(`[data-product=${product}]`);
+    selectedProduct ? selectedProduct.style.display = "block" : console.error("incorrect product selector, make sure has selector name")
     evt.currentTarget.className += " active";
 }

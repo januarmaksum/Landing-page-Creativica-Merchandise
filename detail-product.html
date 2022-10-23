@@ -75,43 +75,43 @@
                 <picture 
                     id="defaultOpen" 
                     class="flex p-1 xl:mb-4 product-nav cursor-pointer"
-                    onclick="showDisplayProduct(event, 'London')"
+                    onclick="showDisplayProduct(event, 'product-01')"
                     >
                     <img class="object-cover h-14 xl:h-44 2xl:h-52 w-full" src="dist/images/product-02.png" alt="image product" />
                 </picture>
                 <picture                 
                     class="flex p-1 xl:mb-4 product-nav cursor-pointer"
-                    onclick="showDisplayProduct(event, 'Paris')"
+                    onclick="showDisplayProduct(event, 'product-02')"
                     >
                     <img class="object-cover h-14 xl:h-44 2xl:h-52 w-full" src="dist/images/product-03.png" alt="image product" />
                 </picture>
                 <picture                 
                     class="flex p-1 xl:mb-4 product-nav cursor-pointer"
-                    onclick="showDisplayProduct(event, 'Tokyo')"
+                    onclick="showDisplayProduct(event, 'product-03')"
                     >
                     <img class="object-cover h-14 xl:h-44 2xl:h-52 w-full" src="dist/images/product-04.png" alt="image product" />
                 </picture>
                 <picture                 
                     class="flex p-1 xl:mb-4 product-nav cursor-pointer"
-                    onclick="showDisplayProduct(event, 'German')"
+                    onclick="showDisplayProduct(event, 'product-04')"
                     >
                     <img class="object-cover h-14 xl:h-44 2xl:h-52 w-full" src="dist/images/product-05.png" alt="image product" />
                 </picture>
             </div>
             <div class="flex-grow xl:flex-none">
-                <picture id="London" class="display-product bg-gray-300 xl:bg-transparent">
+                <picture data-product="product-01" class="display-product bg-gray-300 xl:bg-transparent">
                     <img class="object-contain xl:object-cover h-80 lg:h-96 xl:h-[43rem] 2xl:h-[55rem] w-full" src="dist/images/product-02.png" alt="image product" />
                 </picture>
                 
-                <picture id="Paris" class="display-product bg-gray-300 xl:bg-transparent">
+                <picture data-product="product-02" class="display-product bg-gray-300 xl:bg-transparent">
                     <img class="object-contain xl:object-cover h-80 lg:h-96 xl:h-[43rem] 2xl:h-[55rem] w-full" src="dist/images/product-03.png" alt="image product" />
                 </picture>
                 
-                <picture id="Tokyo" class="display-product bg-gray-300 xl:bg-transparent">
+                <picture data-product="product-03" class="display-product bg-gray-300 xl:bg-transparent">
                     <img class="object-contain xl:object-cover h-80 lg:h-96 xl:h-[43rem] 2xl:h-[55rem] w-full" src="dist/images/product-04.png" alt="image product" />
                 </picture>
 
-                <picture id="German" class="display-product bg-gray-300 xl:bg-transparent">
+                <picture data-product="product-04" class="display-product bg-gray-300 xl:bg-transparent">
                     <img class="object-contain xl:object-cover h-80 lg:h-96 xl:h-[43rem] 2xl:h-[55rem] w-full" src="dist/images/product-05.png" alt="image product" />
                 </picture>
             </div>
