@@ -13,16 +13,12 @@
     <link rel="shortcut icon" href="/dist/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/dist/images/favicon.ico" type="image/x-icon">
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="dist/main.js" defer></script>
 </head>
 
 <body>
-
-    <!-- START: LOGO -->
-    <div class="object-hero-top absolute z-50 w-20 md:w-36">
-        <img src="/dist/images/object-hero-1-1.png" alt="object hero" />
-    </div>
-    <!-- END: LOGO -->
 
     <!-- START: MENU SIDEBAR -->
     <div class="menu-title absolute text-2xl md:text-3xl font-light">Made <span class="font-bold">Creatively</span></div>
@@ -62,45 +58,86 @@
     </aside>
     <!-- END: MENU SIDEBAR -->
 
-    <!-- START: WELCOME -->
-    <div class="w-full relative pb-16 md:pb-44 overflow-hidden flex justify-center">
-        <div class="hero">
-            <div class="hero-big z-40 relative bg-white items-center rounded-full flex justify-center">
-                <div class="animate__animated animate__pulse hero-small rounded-full flex items-center justify-center relative">
-                    <img class="big-logo animate__animated animate__fadeInLeft" src="dist/images/logo.png" alt="logo Creativica Media Global" />
-                    <h1
-                        class="animate__animated animate__fadeInUp hero-title py-3 md:py-4 px-5 md:px-12 font-medium text-xl md:text-4xl text-center text-white uppercase rounded-full m-0 absolute">
-                        Creativica Media Global</h1>
-                </div>
-            </div>
+    <!-- START: HERO -->
+    <section class="hero-image bg-cover bg-no-repeat bg-center relative">
+        <div class="absolute w-10/12 top-28 md:top-36 xl:top-16 left-[50%] -translate-x-[50%] 2xl:top-16 text-center">
+            <p class="font-bold 2xl:px-10">Get your corporate discount by ordering min. 100 units</p>
+            <img class="w-40 2xl:w-72 block mx-auto mt-10" src="dist/images/logo-new.png" alt="logo creativica" />
         </div>
-        <div class="object-circle-bottom absolute rounded-full"></div>
-    </div>
-    <!-- END: WELCOME -->
+        <div class="h-[50rem] xl:h-[65rem] 2xl:h-[76rem]"></div>
+    </section>
+    <!-- END: HERO -->
 
-    <!-- START: INTRO -->
-    <div class="hero-intro w-full px-10 md:px-0 md:pl-10 lg:pl-20 xl:pl-28 2xl:pl-32 -mb-20 md:mb-40 lg:mb-40 pb-16 md:pb-0 lg:pb-24 overflow-hidden">
-        <div class="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 md:gap-3 relative">
-            <div class="pb-20 md:pb-60 md:w-9/12 xl:w-full xl:pr-20 2xl:w-10/12">
-                <div class="init_animate badge w-fit mb-5 md:mb-10 rounded-full py-1 md:py-4 px-8 md:px-14 uppercase text-center text-white font-bold text-xl md:text-2xl">intro</div>
-                <h2 class="init_animate text-3xl md:text-6xl xl:text-5xl font-bold text-black tracking-widest mb-5 md:mb-9">Help Business <span class="block">Creatively</span></h2>
-                <p class="init_animate text-black text-base md:text-xl md:text-justify">
-                    Considering marketing will never die and as show we know marketing always walk a side with Branding.
-                    We providing an exclusive merchandise and collaborate the design with the media to pursue your
-                    company branding is our goals. Creativica made creatively.
-                </p>
-            </div>
-            <div class="object-intro-1 absolute rounded-full bg-no-repeat bg-cover bg-center">
-                <div class="init_animate placeholder-object-1 w-64 xl:w-72 -bottom-28 xl:-bottom-8 2xl:-bottom-8 left-20 bg-white absolute px-14 xl:px-20 pt-16 pb-36 hidden md:hidden lg:hidden xl:block">
-                    <div class="text-xl">We Develope</div>
-                    <div class="text-7xl">BIG</div>
-                    <div class="text-xl">idea</div>
-                    <div class="placeholder-object-1-label w-full h-24 absolute left-0 bottom-0"></div>
+    <!-- START: HERO -->
+    <section class="bg-orange relative pt-24 2xl:pt-28 px-4 pb-9 2xl:pb-14 -mt-20 mb-16 lg:mb-28 text-white text-center rounded-[3rem] shadow-[0_5px_15px_rgba(0,0,0,.3)]">
+        <div class="w-40 absolute left-[50%] -translate-x-[50%] -top-20 rounded-full bg-white p-4 shadow-[0_5px_15px_rgba(0,0,0,.3)]">
+            <img class="block mx-auto w-full" src="/dist/images/logo.png" alt="logo creativica" />
+        </div>
+        <h1 class="init_animate text-3xl 2xl:text-5xl 2xl:w-96 lg:w-56 lg:mx-auto font-bold tracking-wider mb-4">
+            Help Business Creatively
+        </h1>
+        <div class="lg:w-2/3 lg:mx-auto xl:w-1/2 2xl:w-5/12">
+            <p class="init_animate text-base 2xl:text-xl">
+                Considering marketing will never die and as show we know marketing always walk a side with Branding.
+                We providing an exclusive merchandise and collaborate the design with the media to pursue your
+                company branding is our goals. Creativica made creatively.
+            </p>
+        </div>
+    </section>
+    <!-- END: HERO -->
+
+    <!-- START: OUR FEATURED -->
+    <h2 class="uppercase tracking-widest text-xl xl:text-2xl heading-block relative font-medium text-center pb-3 mb-8 2xl:mb-12">
+        Our Featured Products
+    </h2>
+
+    <section class="md:px-10 xl:px-20 2xl:px-32 relative">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="w-80 xl:w-96 2xl:w-[32rem] 2xl:h-[42rem] h-[23rem] md:h-[20rem] xl:h-[32rem] lg:h-[30rem] px-4 md:px-0 object-cover block mx-auto rounded-[2rem] 2xl:rounded-[6rem]" src="dist/images/Little Gentlemen Gift Set.jpg" alt="slide 1" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="w-80 xl:w-96 2xl:w-[32rem] 2xl:h-[42rem] h-[23rem] md:h-[20rem] xl:h-[32rem] lg:h-[30rem] px-4 md:px-0 object-cover block mx-auto rounded-[2rem] 2xl:rounded-[6rem]" src="dist/images/Bridesmaid Proposal Inspo.jpg" alt="slide 1" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="w-80 xl:w-96 2xl:w-[32rem] 2xl:h-[42rem] h-[23rem] md:h-[20rem] xl:h-[32rem] lg:h-[30rem] px-4 md:px-0 object-cover block mx-auto rounded-[2rem] 2xl:rounded-[6rem]" src="dist/images/Top Corporate Event Gift Box Designs of 2018.jpg" alt="slide 1" />
                 </div>
             </div>
+        
         </div>
+        <div class="nav-slide-prev w-12 h-12 2xl:w-20 2xl:h-20 left-2 md:left-12 2xl:left-6 right-auto">
+            <a href="/products.html" class="shadow-[-10px_0px_10px_0px_rgba(0,0,0,0.2)] p-3 rounded-full bg-white">
+                <img class="w-7 2xl:w-24 block" src="dist/images/211686_back_arrow_icon.svg" alt="back icon">
+            </a>
+        </div>
+        <div class="nav-slide-next w-12 h-12 2xl:w-20 2xl:h-20 right-2 md:right-12 2xl:right-6 left-auto">
+            <a href="/products.html" class="shadow-[10px_0px_10px_0px_rgba(0,0,0,0.2)] p-3 rounded-full bg-white">
+                <img class="w-7 2xl:w-24 block" src="dist/images/211688_forward_arrow_icon.svg" alt="forward icon">
+            </a>
+        </div>
+    </section>
+
+    <div class="text-center mt-7 xl:mt-12">
+        <a href="/products.html" class="uppercase text-white py-2 xl:py-3 xl:px-10 text-xl 2xl:text-2xl tracking-widest px-7 appearance-none border-none bg-orange-dark">
+            See All
+        </a>
     </div>
-    <!-- END: INTRO -->
+    <!-- END: OUR FEATURED -->
+
+    <!-- START: OUR FEATURED 2 -->
+    <section class="flex flex-col gap-8 mx-10 xl:mx-20 2xl:mx-32 mt-14 2xl:mt-40 md:mt-20 mb-10">
+        <div class="grid gap-8 md:grid-cols-[18rem,1fr] 2xl:grid-cols-[30rem,1fr]">
+            <img class="block w-full h-[18rem] 2xl:h-[31rem] object-cover" src="dist/images/product-featured-01.png" alt="product featured" />
+            <div class="featured-image-2 h-[18rem] 2xl:h-[31rem] bg-no-repeat"></div>
+        </div>
+    
+        <div class="grid gap-8 md:grid-cols-[1fr,18rem] 2xl:grid-cols-[1fr,30rem]">
+            <div class="featured-image-3 h-[18rem] 2xl:h-[31rem] bg-no-repeat"></div>
+            <img class="block w-full h-[18rem] 2xl:h-[31rem] object-cover" src="dist/images/product-featured-04.png" alt="product featured" />
+        </div>
+    </section>
+    <!-- END: OUR FEATURED 2 -->
 
     <!-- START: ABOUT -->
     <div class="hero-about-us w-full relative pt-16 px-10 md:px-0 md:pl-10 lg:pl-20 2xl:pl-32 -mb-10 md:mb-0 pb-16 md:pb-0 overflow-hidden">

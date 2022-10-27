@@ -26,6 +26,33 @@ window.addEventListener('load', function () {
     // Get the element with id="defaultOpen" and click on it
     const openDefaultProduct = document.getElementById("defaultOpen")
     openDefaultProduct?.click()
+
+    new Swiper('.swiper', {
+        autoHeight: true,
+        loop: true,
+        navigation: {
+            nextEl: '.nav-slide-next',
+            prevEl: '.nav-slide-prev'
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            1280: {
+                slidesPerView: 3,
+                spaceBetween: 50
+            },
+            1536: {
+                slidesPerView: 3,
+                spaceBetween: 60
+            }
+        }
+    })
 })
 
 function addEventToMenuLink() {
