@@ -649,12 +649,12 @@ video {
   top: 1.75rem;
 }
 
-.-z-10 {
-  z-index: -10;
-}
-
 .z-10 {
   z-index: 10;
+}
+
+.-z-10 {
+  z-index: -10;
 }
 
 .m-4 {
@@ -973,6 +973,10 @@ video {
 
 .flex-nowrap {
   flex-wrap: nowrap;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -1315,6 +1319,10 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1342,6 +1350,10 @@ video {
 
 .leading-5 {
   line-height: 1.25rem;
+}
+
+.leading-\[2rem\] {
+  line-height: 2rem;
 }
 
 .tracking-widest {
@@ -1408,6 +1420,12 @@ video {
 .shadow-\[10px_0px_10px_0px_rgba\(0\2c 0\2c 0\2c 0\.2\)\] {
   --tw-shadow: 10px 0px 10px 0px rgba(0,0,0,0.2);
   --tw-shadow-colored: 10px 0px 10px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[11px_2px_7px_rgba\(0\2c 0\2c 0\2c \.3\)\] {
+  --tw-shadow: 11px 2px 7px rgba(0,0,0,.3);
+  --tw-shadow-colored: 11px 2px 7px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1891,11 +1909,32 @@ html,  body {
 }
 
 .featured-image-2 {
-  background-image: url(/dist/images/product-featured-02.png);
+  background-image: url(/dist/images/nordwood-themes-nDd3dIkkOLo-unsplash.jpg);
 }
 
 .featured-image-3 {
-  background-image: url(/dist/images/product-featured-03.png);
+  background-image: url(/dist/images/deanna-alys-6LBBOwkPzyQ-unsplash.jpg);
+}
+
+.featured-image-2::before,
+.featured-image-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+.featured-image-2::before {
+  background: rgb(2,0,36);
+  background: linear-gradient(94deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 0%, rgba(56,56,56,0.47942927170868344) 44%, rgba(0,0,0,0.5270483193277311) 100%);
+}
+
+.featured-image-3::before {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.5270483193277311) 0%, rgba(56,56,56,0.47942927170868344) 44%, rgba(255,255,255,0) 100%);
 }
 
 @-webkit-keyframes fadeEffect {
@@ -2082,8 +2121,8 @@ html,  body {
   }
 
   .hero-about-us {
-    padding-top: 50rem;
-    margin-top: -17rem;
+    padding-top: 31rem;
+    margin-top: 5rem;
   }
 
   .object-about-1 {
@@ -2178,7 +2217,7 @@ html,  body {
   }
 
   .hero-about-us {
-    padding-top: 52rem;
+    padding-top: 37rem;
   }
 
   .form-section {
@@ -2795,6 +2834,10 @@ html,  body {
     width: 24rem;
   }
 
+  .xl\:w-2\/4 {
+    width: 50%;
+  }
+
   .xl\:w-full {
     width: 100%;
   }
@@ -2894,6 +2937,10 @@ html,  body {
        object-fit: cover;
   }
 
+  .xl\:p-8 {
+    padding: 2rem;
+  }
+
   .xl\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -2978,9 +3025,21 @@ html,  body {
     line-height: 1.75rem;
   }
 
+  .xl\:text-\[3rem\] {
+    font-size: 3rem;
+  }
+
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .xl\:leading-tight {
+    line-height: 1.25;
+  }
+
+  .xl\:tracking-wide {
+    letter-spacing: 0.025em;
   }
 
   .xl\:shadow-none {
@@ -3349,5 +3408,9 @@ html,  body {
   .\32xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .\32xl\:text-\[4rem\] {
+    font-size: 4rem;
   }
 }

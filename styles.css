@@ -485,11 +485,32 @@ html, body {
 }
 
 .featured-image-2 {
-    background-image: url(/dist/images/product-featured-02.png);
+    background-image: url(/dist/images/nordwood-themes-nDd3dIkkOLo-unsplash.jpg);
 }
 
 .featured-image-3 {
-    background-image: url(/dist/images/product-featured-03.png);
+    background-image: url(/dist/images/deanna-alys-6LBBOwkPzyQ-unsplash.jpg);
+}
+
+.featured-image-2::before,
+.featured-image-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+}
+
+.featured-image-2::before {
+    background: rgb(2,0,36);
+    background: linear-gradient(94deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 0%, rgba(56,56,56,0.47942927170868344) 44%, rgba(0,0,0,0.5270483193277311) 100%);
+}
+
+.featured-image-3::before {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.5270483193277311) 0%, rgba(56,56,56,0.47942927170868344) 44%, rgba(255,255,255,0) 100%);
 }
 
 @keyframes fadeEffect {
@@ -666,8 +687,8 @@ html, body {
     }
 
     .hero-about-us {
-        padding-top: 50rem;
-        margin-top: -17rem;
+        padding-top: 31rem;
+        margin-top: 5rem;
     }
 
     .object-about-1 {
@@ -761,7 +782,7 @@ html, body {
     }
 
     .hero-about-us {
-        padding-top: 52rem;
+        padding-top: 37rem;
     }
 
     .form-section {
